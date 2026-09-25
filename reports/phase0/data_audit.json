@@ -1,0 +1,273 @@
+{
+  "audit_timestamp": "2026-09-25T05:56:24Z",
+  "train_sources": {
+    "source1": {
+      "file": "train_source1.tsv",
+      "exists": true,
+      "size_mb": 200.34,
+      "total_rows": 2206821,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "is_schema_valid": true,
+      "unique_entity_ids": 2206821,
+      "duplicate_entity_ids": 0,
+      "sample_duplicate_ids": [],
+      "null_entity_ids": 0,
+      "null_business_names": 0,
+      "null_business_addresses": 0,
+      "null_countries": 0,
+      "prefix_distribution": {
+        "S1-": 2206821
+      },
+      "expected_prefix": "S1-",
+      "prefix_consistent": true,
+      "country_distribution": {
+        "US": 1323633,
+        "India": 883188
+      },
+      "sample_100k_duplicate_names_count": 5663,
+      "sample_100k_duplicate_addresses_count": 279,
+      "audit_duration_seconds": 7.98
+    },
+    "source2": {
+      "file": "train_source2.tsv",
+      "exists": true,
+      "size_mb": 466.63,
+      "total_rows": 5034616,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "is_schema_valid": true,
+      "unique_entity_ids": 5034616,
+      "duplicate_entity_ids": 0,
+      "sample_duplicate_ids": [],
+      "null_entity_ids": 0,
+      "null_business_names": 0,
+      "null_business_addresses": 168967,
+      "null_countries": 0,
+      "prefix_distribution": {
+        "S2-": 5034616
+      },
+      "expected_prefix": "S2-",
+      "prefix_consistent": true,
+      "country_distribution": {
+        "India": 2017799,
+        "US": 3016817
+      },
+      "sample_100k_duplicate_names_count": 1051,
+      "sample_100k_duplicate_addresses_count": 288,
+      "audit_duration_seconds": 22.19
+    },
+    "source3": {
+      "file": "train_source3.tsv",
+      "exists": true,
+      "size_mb": 480.37,
+      "total_rows": 5285603,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "is_schema_valid": true,
+      "unique_entity_ids": 5285603,
+      "duplicate_entity_ids": 0,
+      "sample_duplicate_ids": [],
+      "null_entity_ids": 0,
+      "null_business_names": 0,
+      "null_business_addresses": 175916,
+      "null_countries": 0,
+      "prefix_distribution": {
+        "S3-": 5285603
+      },
+      "expected_prefix": "S3-",
+      "prefix_consistent": true,
+      "country_distribution": {
+        "US": 3170056,
+        "India": 2115547
+      },
+      "sample_100k_duplicate_names_count": 901,
+      "sample_100k_duplicate_addresses_count": 202,
+      "audit_duration_seconds": 25.22
+    }
+  },
+  "ground_truth": {
+    "file": "train_ground_truth.tsv",
+    "exists": true,
+    "size_mb": 121.13,
+    "total_rows": 2206821,
+    "columns": [
+      "source1_entity_id",
+      "matched_entity_ids"
+    ],
+    "is_schema_valid": true,
+    "unique_s1_entities": 2206821,
+    "duplicate_s1_ids": 0,
+    "sample_duplicate_s1": [],
+    "null_s1_ids": 0,
+    "malformed_rows": 0,
+    "self_matches_count": 0,
+    "invalid_prefix_count": 0,
+    "intra_list_duplicates_count": 0,
+    "singleton_count": 123247,
+    "singleton_percentage": 5.58,
+    "one_match_count": 119157,
+    "one_match_percentage": 5.4,
+    "multi_match_count": 1964417,
+    "multi_match_percentage": 89.02,
+    "s2_only_match_count": 143029,
+    "s3_only_match_count": 164498,
+    "s2_and_s3_match_count": 1776047,
+    "total_true_links": 7638365,
+    "total_s2_links": 3693619,
+    "total_s3_links": 3944746,
+    "mean_links_per_s1": 3.4613,
+    "top_match_counts": {
+      "3": 530841,
+      "4": 484115,
+      "2": 375212,
+      "5": 321957,
+      "6": 164868,
+      "0": 123247,
+      "1": 119157,
+      "7": 63968,
+      "8": 18680,
+      "9": 4205
+    },
+    "audit_duration_seconds": 16.72
+  },
+  "test_sources": {
+    "source1": {
+      "file": "test_source1.tsv",
+      "exists": true,
+      "size_mb": 166.91,
+      "total_rows": 1732544,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "is_schema_valid": true,
+      "unique_entity_ids": 1732544,
+      "duplicate_entity_ids": 0,
+      "sample_duplicate_ids": [],
+      "null_entity_ids": 0,
+      "null_business_names": 0,
+      "null_business_addresses": 0,
+      "null_countries": 0,
+      "prefix_distribution": {
+        "S1-": 1732544
+      },
+      "expected_prefix": "S1-",
+      "prefix_consistent": true,
+      "country_distribution": {
+        "US": 663106,
+        "France": 259452,
+        "India": 809986
+      },
+      "sample_100k_duplicate_names_count": 5914,
+      "sample_100k_duplicate_addresses_count": 317,
+      "audit_duration_seconds": 7.37
+    },
+    "source2": {
+      "file": "test_source2.tsv",
+      "exists": true,
+      "size_mb": 485.86,
+      "total_rows": 4887273,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "is_schema_valid": true,
+      "unique_entity_ids": 4887273,
+      "duplicate_entity_ids": 0,
+      "sample_duplicate_ids": [],
+      "null_entity_ids": 0,
+      "null_business_names": 0,
+      "null_business_addresses": 129408,
+      "null_countries": 0,
+      "prefix_distribution": {
+        "S2-": 4887273
+      },
+      "expected_prefix": "S2-",
+      "prefix_consistent": true,
+      "country_distribution": {
+        "India": 2312565,
+        "France": 703378,
+        "US": 1871330
+      },
+      "sample_100k_duplicate_names_count": 998,
+      "sample_100k_duplicate_addresses_count": 298,
+      "audit_duration_seconds": 24.9
+    },
+    "source3": {
+      "file": "test_source3.tsv",
+      "exists": true,
+      "size_mb": 482.56,
+      "total_rows": 5082316,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "is_schema_valid": true,
+      "unique_entity_ids": 5082316,
+      "duplicate_entity_ids": 0,
+      "sample_duplicate_ids": [],
+      "null_entity_ids": 0,
+      "null_business_names": 0,
+      "null_business_addresses": 136098,
+      "null_countries": 0,
+      "prefix_distribution": {
+        "S3-": 5082316
+      },
+      "expected_prefix": "S3-",
+      "prefix_consistent": true,
+      "country_distribution": {
+        "India": 2405000,
+        "France": 731615,
+        "US": 1945701
+      },
+      "sample_100k_duplicate_names_count": 879,
+      "sample_100k_duplicate_addresses_count": 232,
+      "audit_duration_seconds": 20.36
+    }
+  },
+  "raw_exact_agreement_diagnostics": {
+    "sample_true_pairs_evaluated": 50000,
+    "exact_name_equality_count": 2265,
+    "exact_name_equality_percentage": 4.53,
+    "exact_address_equality_count": 1172,
+    "exact_address_equality_percentage": 2.34,
+    "exact_name_and_address_equality_count": 0,
+    "exact_name_and_address_equality_percentage": 0.0,
+    "diagnostic_note": "Factual audit statistics measuring raw string equality on true links without any matcher."
+  },
+  "summary_totals": {
+    "total_six_source_records": 24229173,
+    "total_challenge_records_including_ground_truth": 26435994,
+    "total_train_source_records": 12527040,
+    "total_test_source_records": 11702133,
+    "total_ground_truth_records": 2206821,
+    "total_six_source_bytes": 2393558118,
+    "total_challenge_bytes_including_ground_truth": 2520573701,
+    "authoritative_definitions": {
+      "total_six_source_records": "Sum of entity data rows across the 6 source TSVs (train_source1/2/3 and test_source1/2/3), strictly excluding header rows and ground truth.",
+      "total_challenge_records_including_ground_truth": "Sum of all data rows across all 7 challenge TSVs including train_ground_truth.tsv, strictly excluding header rows.",
+      "train_source_records": "Sum of entity data rows in train_source1.tsv, train_source2.tsv, train_source3.tsv.",
+      "test_source_records": "Sum of entity data rows in test_source1.tsv, test_source2.tsv, test_source3.tsv.",
+      "ground_truth_records": "Total rows in train_ground_truth.tsv (corresponds 1-to-1 with train_source1 entities)."
+    }
+  }
+}

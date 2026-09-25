@@ -1,0 +1,46 @@
+{
+  "france_test_s1_entities": 259452,
+  "observations": "French legal forms (SARL, SAS, SA) and 5-digit postal codes successfully normalized without pipeline modification.",
+  "samples": [
+    {
+      "entity_id": "S1-156285671",
+      "raw_name": "<< Team Ecole",
+      "cleaned_name": "team ecole",
+      "stripped_legal_name": "team ecole",
+      "raw_address": "175 Boulevard du Pr\u00e9sident Franklin Roosevelt, Bordeaux, Nouvelle-Aquitaine",
+      "postal_codes": []
+    },
+    {
+      "entity_id": "S1-921369899",
+      "raw_name": "ZNB Club SARL",
+      "cleaned_name": "znb club sarl",
+      "stripped_legal_name": "znb club",
+      "raw_address": "Nouvelle-Aquitaine, La Teste-de-Buch, 5 bis Rue Pierre Dignac",
+      "postal_codes": []
+    },
+    {
+      "entity_id": "S1-913506265",
+      "raw_name": "Thermal & Fils SASU",
+      "cleaned_name": "thermal fils sasu",
+      "stripped_legal_name": "thermal fils",
+      "raw_address": "20 Rue Parmentier, Dunkerque, Hauts-de-France",
+      "postal_codes": []
+    },
+    {
+      "entity_id": "S1-628750886",
+      "raw_name": "Grain & Fils",
+      "cleaned_name": "grain fils",
+      "stripped_legal_name": "grain fils",
+      "raw_address": "Lille, 329 Avenue de Dunkerque, Hauts-de-France",
+      "postal_codes": []
+    },
+    {
+      "entity_id": "S1-466641145",
+      "raw_name": "Elephant Centre EURL",
+      "cleaned_name": "elephant centre eurl",
+      "stripped_legal_name": "elephant centre",
+      "raw_address": "30 Rue Lachassaigne, Bordeaux, Nouvelle-Aquitaine",
+      "postal_codes": []
+    }
+  ]
+}

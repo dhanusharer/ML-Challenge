@@ -1,0 +1,1502 @@
+{
+  "gate_name": "PHASE_1_6_FULL_TARGET_CORPUS_GATE",
+  "query_cohort_size": 1000,
+  "target_universes": [
+    {
+      "total_queries": 1000,
+      "total_true_links": 3405,
+      "captured_true_links": 3304,
+      "blocking_recall": 0.970337738619677,
+      "s2_true_links": 1625,
+      "s2_captured_links": 1586,
+      "s2_recall": 0.976,
+      "s3_true_links": 1780,
+      "s3_captured_links": 1718,
+      "s3_recall": 0.9651685393258427,
+      "total_candidates": 26925,
+      "mean_candidates": 26.925,
+      "median_candidates": 25.0,
+      "p90_candidates": 30.0,
+      "p95_candidates": 35.0,
+      "p99_candidates": 50.0,
+      "max_candidates": 91,
+      "reduction_ratio": 0.9997396160727238,
+      "runtime_seconds": 0.2903163433074951,
+      "throughput_queries_per_sec": 3444.5184470404665,
+      "peak_ram_mb": 1288.41015625,
+      "failures_sampled": [
+        {
+          "s1_id": "S1-573464572",
+          "s1_name": "Bangalore Solutions",
+          "s1_address": "No.170, Iii Floor, Hegganahalli Main Road, Hegganahalli, Vishwaneedam Post, Bangalore, Karnataka",
+          "target_id": "S2-781987959",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-270780489",
+          "s1_name": "Cure Hair Studio Care",
+          "s1_address": "Medford, Unit 416, MA, 35 Bradlee Road",
+          "target_id": "S2-842329809",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-772472322",
+          "s1_name": "Mirror Law Chambers",
+          "s1_address": "542/026/1968 A, New, Haiderganj, Campbell Road, Lucknow, Uttar Pradesh",
+          "target_id": "S3-499305263",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-756280512",
+          "s1_name": "Utkrisht Sangh",
+          "s1_address": "Khasra No.323, Behind Chhatarpur Car Parking Idgah Road, Chhatarpur, New Delhi, Delhi",
+          "target_id": "S3-598796918",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-299894156",
+          "s1_name": "Innovative Global Private Limited",
+          "s1_address": "1002C Tower C Iitl Nimbus, Hyde Park Noida Sec 78, Noida, Gautam Buddha Nagar, Uttar Pradesh",
+          "target_id": "S2-615197304",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-246903177",
+          "s1_name": "Board of Education Corp",
+          "s1_address": "13 Evarts Avenue, Elmsford, NY",
+          "target_id": "S2-144176498",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-238950219",
+          "s1_name": "Pietila Staffing, LLC",
+          "s1_address": "10604 Allie Court, Spotsylvania County, VA",
+          "target_id": "S3-723943056",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-238950219",
+          "s1_name": "Pietila Staffing, LLC",
+          "s1_address": "10604 Allie Court, Spotsylvania County, VA",
+          "target_id": "S3-579310141",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-816852060",
+          "s1_name": "Christ Synagogue",
+          "s1_address": "22 Aaron Street, Berea, OH",
+          "target_id": "S3-66341456",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-480316414",
+          "s1_name": "Swastik Exports Private Limited",
+          "s1_address": "22, Lee Road, 1St Floor, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-883796909",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-480316414",
+          "s1_name": "Swastik Exports Private Limited",
+          "s1_address": "22, Lee Road, 1St Floor, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-625698242",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-609491435",
+          "s1_name": "Bharat Alpha Foundation Private Limited",
+          "s1_address": "Plot No 7538 Ayappakkam, Chennai, Tamil Nadu",
+          "target_id": "S2-798223803",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-609491435",
+          "s1_name": "Bharat Alpha Foundation Private Limited",
+          "s1_address": "Plot No 7538 Ayappakkam, Chennai, Tamil Nadu",
+          "target_id": "S3-265078705",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-762177613",
+          "s1_name": "Ace Constructions Private Limited",
+          "s1_address": "Saptagiri Nilayam, 123/A, 1St Floor, 4Th Cross, 27Th Main, Sector-1, Hsr Layout, Bangalore, Karnataka",
+          "target_id": "S2-100080376",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-719277082",
+          "s1_name": "Placement Land Limited",
+          "s1_address": "Off No.904, Plot No.E/3A, Sec-12, Kharghar, Panvel, Raigarh(Mh), Maharashtra",
+          "target_id": "S2-583423706",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-340142244",
+          "s1_name": "New Delhi Aids Private Limited",
+          "s1_address": "C-9, Okhla Industrial Area Ph-I, New Delhi, South Delhi, Delhi",
+          "target_id": "S2-101202826",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-520154810",
+          "s1_name": "Hirsch's Express Maintenance",
+          "s1_address": "425 15th Street, Snohomish, WA",
+          "target_id": "S3-810528982",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-134822808",
+          "s1_name": "Waterlink & Sons Public Limited",
+          "s1_address": "E-21/25 (New E-21/990), Gali No 21, East Gokalpur, Delhi North East, North West Delhi, Delhi",
+          "target_id": "S3-514703654",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-245812765",
+          "s1_name": "Supreme Constructions Private Limited",
+          "s1_address": "Rajinder Nagar, New Delhi, R-815(B-11), Central Delhi, New Delhi, Delhi",
+          "target_id": "S3-598018417",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-678912008",
+          "s1_name": "XW Security Private Limited",
+          "s1_address": "Marshal House, Room No.234, 2Nd Floor 33/1, Netaji Subhas Road, Kolkata, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-400974635",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-255342663",
+          "s1_name": "Gujarat Producer Private Limited",
+          "s1_address": "G-242, Sector-Beta-2, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh",
+          "target_id": "S2-699369546",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-551716415",
+          "s1_name": "Ace Hospitality LLC",
+          "s1_address": "Unit 1, Boston, 291 Dorchester Street, MA",
+          "target_id": "S2-506278490",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-404711972",
+          "s1_name": "Superior Hospitality Enterprises Inc",
+          "s1_address": "286 Brentwood Drive, Painesville City, OH",
+          "target_id": "S3-873173896",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-110865413",
+          "s1_name": "3696 Washington Drive Company",
+          "s1_address": "12225 Troon Court, Fl 0, Wichita, KS",
+          "target_id": "S3-789678769",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-211473241",
+          "s1_name": "Petrichor Materials Private Limited",
+          "s1_address": "Gurgaon, 5Th Floor, Spaze Platinum Tower, Sector-47, Sohna Road, Gurugram, Haryana, Gurgaon, 518, Haryana, Gurgaon",
+          "target_id": "S3-309637952",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-152882201",
+          "s1_name": "R & K Bond LLC",
+          "s1_address": "1835 Jacquelyn Drive, Houston, TX",
+          "target_id": "S3-745531589",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-252658427",
+          "s1_name": "Kumar Solutions Private Limited",
+          "s1_address": "Howrah, West Bengal, Dn-12, Kolkata, 8Th Floor, Salt Lake, Sec5, Near Matrix Tower, Kolkata",
+          "target_id": "S3-666470773",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-681703702",
+          "s1_name": "Chandravi Ventures Private Limited",
+          "s1_address": "Ginserv, Bangalore, Karnataka, Site No. 1, Hal 3Rd Stage, Behind Hotel Leela Palace, Kodihalli, Bengaluru",
+          "target_id": "S3-113107176",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-450598746",
+          "s1_name": "RK Lifestyles Public Limited",
+          "s1_address": "D.No.1-7-74/79, Shop No24, Devaki Chambers, Sd Road, Secunderabad, Hyderabad, Telangana",
+          "target_id": "S3-820012018",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-766108997",
+          "s1_name": "Shiv Trading LLP",
+          "s1_address": "Uttar Pradesh, Ghaziabad, Enclave Ghaziabad, 72And73 Road No-5 Ratan",
+          "target_id": "S3-920014868",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-235736062",
+          "s1_name": "Celle Gong, D.C., PC",
+          "s1_address": "9001 East Drive, Austin, TX",
+          "target_id": "S2-232208910",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-108049319",
+          "s1_name": "Construction Swastik Services Pvt. Ltd.",
+          "s1_address": "Flat No. 801, Bldg - R, Madhuvanti Nanded City, Sinhagad Road, Haveli, Pune, Maharashtra",
+          "target_id": "S2-419219159",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-120633451",
+          "s1_name": "Foot & Ankle Regional Group PLLC",
+          "s1_address": "Peoria, 29430 119th Lane, AZ",
+          "target_id": "S2-162629600",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-120633451",
+          "s1_name": "Foot & Ankle Regional Group PLLC",
+          "s1_address": "Peoria, 29430 119th Lane, AZ",
+          "target_id": "S3-175345646",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-78776687",
+          "s1_name": "Great Producer Private Limited",
+          "s1_address": "G-6, Ground Floor, O.K. Plus Space F-45 Malviya Nagar Industrial Area, Near Apex, Circle, Jaipur, Rajasthan",
+          "target_id": "S3-682598148",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-98771193",
+          "s1_name": "Smart Consultancy Limited",
+          "s1_address": "Shop No.2, Ground Floor, Ram Niwas, Building No.10 Gazdar Street, Chirabazar, Kalbadevi, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S2-251255932",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-849320948",
+          "s1_name": "Smart Pioneer Core",
+          "s1_address": "4128 Kalayne Lane, Clarence, NY",
+          "target_id": "S2-554732078",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-945621153",
+          "s1_name": "Guru Estate Private Limited",
+          "s1_address": "A/101, Sun Grace Apartment, Evershine, Gokhivare, Vasai (East), Palghar, Thane, Maharashtra",
+          "target_id": "S2-429471470",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-536419722",
+          "s1_name": "Primary Care Clinic Inc",
+          "s1_address": "12 Indian Lane, Sharon, MA",
+          "target_id": "S3-649159712",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-961621104",
+          "s1_name": "Indian Foods Private Limited",
+          "s1_address": "Chennai, 13/1 Andiyappan Street Old Washermenpet, Tamil Nadu, Chennai",
+          "target_id": "S3-852726698",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-573074826",
+          "s1_name": "Rochella Barber Dollar Inc",
+          "s1_address": "8 Highland Court, Mount Vernon, OH",
+          "target_id": "S3-353530327",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-89800867",
+          "s1_name": "Rvj Industries Private Limited",
+          "s1_address": "3A, Pollock Street, Keshowjee Chambers, Unit F, 3Rd Floor, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-434456635",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-916571346",
+          "s1_name": "American Ministries LLC",
+          "s1_address": "8205 Magnolia Street, Houston, TX",
+          "target_id": "S2-554638052",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-94649494",
+          "s1_name": "Griffen Grifols",
+          "s1_address": "1271 J, Town Of Kinnickinnic, WI",
+          "target_id": "S2-99694657",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-627938214",
+          "s1_name": "Sunrise Power",
+          "s1_address": "Delhi, East Delhi, 61, 2Nd Floor, Vijay Block, Laxmi Nagar, East Delhi",
+          "target_id": "S2-773958249",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-627938214",
+          "s1_name": "Sunrise Power",
+          "s1_address": "Delhi, East Delhi, 61, 2Nd Floor, Vijay Block, Laxmi Nagar, East Delhi",
+          "target_id": "S2-899799796",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-627938214",
+          "s1_name": "Sunrise Power",
+          "s1_address": "Delhi, East Delhi, 61, 2Nd Floor, Vijay Block, Laxmi Nagar, East Delhi",
+          "target_id": "S2-560151291",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-134318315",
+          "s1_name": "Middle Heights LLP",
+          "s1_address": "31/5, Jangpura Extn., New Delhi, Delhi",
+          "target_id": "S2-894647775",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-174189732",
+          "s1_name": "Djs & Co",
+          "s1_address": "167F, Nandani 1, Dr. B Ambedkar Road Dadar (West) Next To Icici Bank Poonawadi, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-316895546",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-567591337",
+          "s1_name": "Seven Raj Marketing Pvt Ltd",
+          "s1_address": "A/501, Mohan Mansion, A-Wing, Gulmohar Road, Nr. Somaya Grd, Kurla, Ch, Unabhatti, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-373582465",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-139006304",
+          "s1_name": "Verrus Rice LLC",
+          "s1_address": "2696 Main Street, Unit STE 3, Bath County, VA",
+          "target_id": "S2-88756895",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-176366316",
+          "s1_name": "Boone, Wallace & Carbajal LLC",
+          "s1_address": "7010 Radway Court, Fayetteville, NC",
+          "target_id": "S3-171318648",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-580365345",
+          "s1_name": "Swastik Software Private Limited",
+          "s1_address": "42/B, Chalapurathu, Kunnathunadu, Ernakulam, Kerala",
+          "target_id": "S2-501498360",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-580365345",
+          "s1_name": "Swastik Software Private Limited",
+          "s1_address": "42/B, Chalapurathu, Kunnathunadu, Ernakulam, Kerala",
+          "target_id": "S3-48536815",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-117250907",
+          "s1_name": "Anand Construction Limited",
+          "s1_address": "Khasra No 3331/3, Chhatrasal Nagar Colony, Chhatarpur, Madhya Pradesh",
+          "target_id": "S3-58818145",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-479078014",
+          "s1_name": "Alcaraz & Brewer Navigation",
+          "s1_address": "7 Prospect Street, Unit Apartment 1, Nyack, NY",
+          "target_id": "S2-388197353",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-914725775",
+          "s1_name": "Red Projects",
+          "s1_address": "714A, Desk No.40F, Spencer Plaza, Phase Ii, 7Th Floor, 769, Anna Salai, Thousand Lights, Chennai, Tamil Nadu",
+          "target_id": "S2-202473306",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-914725775",
+          "s1_name": "Red Projects",
+          "s1_address": "714A, Desk No.40F, Spencer Plaza, Phase Ii, 7Th Floor, 769, Anna Salai, Thousand Lights, Chennai, Tamil Nadu",
+          "target_id": "S3-227588797",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-838712164",
+          "s1_name": "Sunrise Infotech Private Limited",
+          "s1_address": "19, Lavalle Road, Bangalore, Karnataka",
+          "target_id": "S3-889667310",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-838712164",
+          "s1_name": "Sunrise Infotech Private Limited",
+          "s1_address": "19, Lavalle Road, Bangalore, Karnataka",
+          "target_id": "S3-331442860",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-823053474",
+          "s1_name": "Oneil Wen of Fontana",
+          "s1_address": "7760 Arosia Drive, Fontana, CA",
+          "target_id": "S3-154975722",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-737446027",
+          "s1_name": "Balaji Services LLP",
+          "s1_address": "50/A1/1, Jessore Road, Near Gabra Pukur, P.O. & P.S.- Barasat, Kolkata, Parganas North, West Bengal",
+          "target_id": "S3-174664166",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-660087018",
+          "s1_name": "Peridari Healthcare LLC",
+          "s1_address": "220 Congress Drive, Akron, OH",
+          "target_id": "S3-512927998",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-800676428",
+          "s1_name": "Ostrich Multitrade Pvt Ltd",
+          "s1_address": "Plot No.14, Infinity Real, Block No. 28 Bileshwarpur, Kalol, Gandhi Nagar, Gujarat",
+          "target_id": "S2-325367020",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-36171503",
+          "s1_name": "Keyser Metropolitan Agricultural LLC",
+          "s1_address": "472 Mirabile Lane, Highlandtown, MD",
+          "target_id": "S3-661041845",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-16815431",
+          "s1_name": "Maxflow & Brothers Private Limited",
+          "s1_address": "3-12-117, P. S Colony, Ramanthapur, Amberpet, Hyderabad, Telangana",
+          "target_id": "S3-532893765",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-692977140",
+          "s1_name": "Internal Medicine Cascade Center Care",
+          "s1_address": "122 Feather Falls Circle, Folsom, CA",
+          "target_id": "S3-696966424",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-540708667",
+          "s1_name": "A Reliable Wellness Inc",
+          "s1_address": "3809 Terrace Drive, Fairfax County, VA",
+          "target_id": "S2-579268377",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-425905854",
+          "s1_name": "Sky Management Private Limited",
+          "s1_address": "Flat No 301, Fortune Villa, Guntur, Andhra Pradesh",
+          "target_id": "S3-466817097",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-219961828",
+          "s1_name": "Complete Realty Dynamics LLC",
+          "s1_address": "2924 Muncie Road, Henrico County, VA",
+          "target_id": "S2-632641639",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-940505094",
+          "s1_name": "One Agro",
+          "s1_address": "Old No.93A, New No.106, A-1, Amarjothi Apartments, West Bashyakaralu, R.S.Puram, Coimbatore, Tamil Nadu",
+          "target_id": "S3-837892237",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-288881560",
+          "s1_name": "Golden Eastern International Private Limited",
+          "s1_address": "Flat No 914, Hirabaug Business Center, Cts No 1077 Shukrawar Peth, Pune, Maharashtra",
+          "target_id": "S2-241904673",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-581589753",
+          "s1_name": "Harikrushna Realties Pvt Ltd",
+          "s1_address": "9-1-144/8, Sona Apartments Sebastian Road, Secunderabad, Hyderabad, Telangana",
+          "target_id": "S3-248157883",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-783203060",
+          "s1_name": "Houston Red LLC",
+          "s1_address": "3110 Armada Drive, Houston, TX",
+          "target_id": "S3-391486176",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-783203060",
+          "s1_name": "Houston Red LLC",
+          "s1_address": "3110 Armada Drive, Houston, TX",
+          "target_id": "S3-411263096",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-950622818",
+          "s1_name": "Om Investments Limited",
+          "s1_address": "Flat No 68, Saurabh Chs Ltd, Prarthana Samaj Road Nr Matoshri Residency, Vile Parle East, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-481273368",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-950622818",
+          "s1_name": "Om Investments Limited",
+          "s1_address": "Flat No 68, Saurabh Chs Ltd, Prarthana Samaj Road Nr Matoshri Residency, Vile Parle East, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-890628607",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-909621025",
+          "s1_name": "Solos Kpet LLC",
+          "s1_address": "2320 Meadowridge Court, Town Of Cedarburg, WI",
+          "target_id": "S3-940876987",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-284029242",
+          "s1_name": "Viix Regional Gamco",
+          "s1_address": "2423 Vail Avenue, Charlotte, NC",
+          "target_id": "S3-300504305",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-299548647",
+          "s1_name": "Zephova Seafood",
+          "s1_address": "116 Parkside Drive, New Haven, CT",
+          "target_id": "S3-522110736",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-47147289",
+          "s1_name": "Great South Projects Private Limited",
+          "s1_address": "Cts No- 102, Sani Arma, 3Rd Floor, Raut Lane, Near Isckon Temple, Juhu, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S2-464916421",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-735352327",
+          "s1_name": "North Impex",
+          "s1_address": "P.No 24, Sf No.180/4A1A1, Sai Ajith Complex Ramakrishna Nagar, Near Railway Station, Hosur, Krishnagiri, Dharmapuri, Tamil Nadu",
+          "target_id": "S3-447751396",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-448935777",
+          "s1_name": "Sun High Hospitality Private Limited",
+          "s1_address": "Gautam Buddha Nagar, Uttar Pradesh, Noida, P-125, 123, Vedya Realtors Shahberi, Near Sai Mandir Greater Noida West Tehsil",
+          "target_id": "S3-42865747",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-175708561",
+          "s1_name": "Upper Tokyo LLC",
+          "s1_address": "1044 Main Street, Unit 2, Malden, MA",
+          "target_id": "S3-229336806",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-902449508",
+          "s1_name": "Raify Assets PLLC",
+          "s1_address": "6137 Dayburst Way, Sacramento, CA",
+          "target_id": "S2-645070859",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-902449508",
+          "s1_name": "Raify Assets PLLC",
+          "s1_address": "6137 Dayburst Way, Sacramento, CA",
+          "target_id": "S3-183498531",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-24314010",
+          "s1_name": "Solutions Rrc Infotech Limited",
+          "s1_address": "Bunglow No.17, Pune, Vrundavan Society Sahakarnagar No.2, Maharashtra",
+          "target_id": "S2-899109401",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-250502467",
+          "s1_name": "Sun Products Private Limited",
+          "s1_address": "Mumbai, Maharashtra, Floor 5, Plot \u00c2\u0080\u0093 698 C, Shankar Sagar, Sophia College Lane, Cumballa Hill, 29, Mumbai City",
+          "target_id": "S3-339348256",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-874621205",
+          "s1_name": "Desert Bridge",
+          "s1_address": "4041 Center Avenue, Whitemarsh Township, PA",
+          "target_id": "S2-532709405",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-682172704",
+          "s1_name": "Division of Motor Vehicles Partners",
+          "s1_address": "5 Ascot Street, Unit 3, Boston, MA",
+          "target_id": "S3-812994813",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-584248602",
+          "s1_name": "Kang Agricultural LLC",
+          "s1_address": "403 Hamilton Street, Unit UNIT E, Richmond City, VA",
+          "target_id": "S2-774653348",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-302495877",
+          "s1_name": "Meyer, Mcgee & Dougherty",
+          "s1_address": "4617 Owendale Drive, Fort Worth, TX",
+          "target_id": "S3-977579947",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-672916624",
+          "s1_name": "Sagacious Social Mumbai Ltd",
+          "s1_address": "Mumbai City, Raghuvanshi Mills Cmpd, Senapati Bapat Marg, Lower Parel W, Mumbai, Maharashtra, Elegant House",
+          "target_id": "S3-137282738",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-81021370",
+          "s1_name": "Preferred Gen Inc",
+          "s1_address": "15427 Westwick Road, Snohomish, WA",
+          "target_id": "S3-495602801",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-598804669",
+          "s1_name": "Jain Projects Limited",
+          "s1_address": "P.No-6, Ushodaya Colony, Beside Usha Mullapudi Cardiatic Center(Hospital), Gajularamara, M, Hyderabad, Telangana",
+          "target_id": "S3-732415187",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-941086697",
+          "s1_name": "Citymax (India) View Limited",
+          "s1_address": "S6, 2Nd Floor, Pinnacle Business Park, Near Ahura Center, Mahakali Cave Rod, An, Dheri (Eas, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-765328179",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-113050708",
+          "s1_name": "Am Tent Private Limited",
+          "s1_address": "H.No. 4484/4485, S.No.6033 Kusumvhila Appt. Nalegaon, Ahmednagar, Maharashtra",
+          "target_id": "S3-276702122",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-683747814",
+          "s1_name": "Ace Software Pvt Ltd",
+          "s1_address": "M8 Dwarika Complex, 20 Currie Road P.O. - Santra Gachi, P.S. - Shibpur, Howrah, West Bengal",
+          "target_id": "S2-727673458",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-930732204",
+          "s1_name": "City Consulting Private Limited",
+          "s1_address": "4, Ramkrishna Das Ln, Amherst Street, Kolkata, Howrah, West Bengal",
+          "target_id": "S2-694818753",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-236836933",
+          "s1_name": "Shiv Supreme Enterprises Limited",
+          "s1_address": "601, 2, 7, 8 Golden Chambers Premise Co-Op Soc, Oshiwara Link Road Opp. Fame Adlabs, Andheri, Mumbai City, Maharashtra",
+          "target_id": "S2-328705561",
+          "country": "India"
+        }
+      ],
+      "universe_name": "Universe A (Phase 1 Universe, ~117K Targets)",
+      "target_count": 103405,
+      "fit_time_seconds": 8.044089317321777,
+      "total_time_seconds": 16.155091762542725
+    },
+    {
+      "total_queries": 1000,
+      "total_true_links": 3405,
+      "captured_true_links": 3210,
+      "blocking_recall": 0.9427312775330396,
+      "s2_true_links": 1625,
+      "s2_captured_links": 1542,
+      "s2_recall": 0.9489230769230769,
+      "s3_true_links": 1780,
+      "s3_captured_links": 1668,
+      "s3_recall": 0.9370786516853933,
+      "total_candidates": 33887,
+      "mean_candidates": 33.887,
+      "median_candidates": 26.0,
+      "p90_candidates": 48.10000000000002,
+      "p95_candidates": 73.0,
+      "p99_candidates": 116.03999999999996,
+      "max_candidates": 324,
+      "reduction_ratio": 0.9999252610800499,
+      "runtime_seconds": 1.8351976871490479,
+      "throughput_queries_per_sec": 544.9004251708081,
+      "peak_ram_mb": 2042.03125,
+      "failures_sampled": [
+        {
+          "s1_id": "S1-573464572",
+          "s1_name": "Bangalore Solutions",
+          "s1_address": "No.170, Iii Floor, Hegganahalli Main Road, Hegganahalli, Vishwaneedam Post, Bangalore, Karnataka",
+          "target_id": "S2-781987959",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-679933203",
+          "s1_name": "Gold Group of Companies Private Limited",
+          "s1_address": "H No 7-2-1669/Utopia-D/1 Sanath Nagar, Hyderabad, Telangana",
+          "target_id": "S3-220822669",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-679933203",
+          "s1_name": "Gold Group of Companies Private Limited",
+          "s1_address": "H No 7-2-1669/Utopia-D/1 Sanath Nagar, Hyderabad, Telangana",
+          "target_id": "S3-408740226",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-270780489",
+          "s1_name": "Cure Hair Studio Care",
+          "s1_address": "Medford, Unit 416, MA, 35 Bradlee Road",
+          "target_id": "S2-842329809",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-942845061",
+          "s1_name": "Gutierrez's Metal Works",
+          "s1_address": "5415 Knapp Street, Portland, OR",
+          "target_id": "S3-863656455",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-772472322",
+          "s1_name": "Mirror Law Chambers",
+          "s1_address": "542/026/1968 A, New, Haiderganj, Campbell Road, Lucknow, Uttar Pradesh",
+          "target_id": "S3-499305263",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-52710867",
+          "s1_name": "Lintner Golden Terra LLC",
+          "s1_address": "Moyock, NC, 824 S Mills Road",
+          "target_id": "S3-126907097",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-867606104",
+          "s1_name": "Pacific Committee",
+          "s1_address": "745 Foundry Road, Unit 320, Chattanooga, TN",
+          "target_id": "S3-701684743",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-756280512",
+          "s1_name": "Utkrisht Sangh",
+          "s1_address": "Khasra No.323, Behind Chhatarpur Car Parking Idgah Road, Chhatarpur, New Delhi, Delhi",
+          "target_id": "S3-598796918",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-299894156",
+          "s1_name": "Innovative Global Private Limited",
+          "s1_address": "1002C Tower C Iitl Nimbus, Hyde Park Noida Sec 78, Noida, Gautam Buddha Nagar, Uttar Pradesh",
+          "target_id": "S2-615197304",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-596485150",
+          "s1_name": "Fox Industries",
+          "s1_address": "7 Grandt Lane 3Rd Floor, Room No. 305, Kolkata, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-185383951",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-531177919",
+          "s1_name": "Blue Innovative Investment Private Limited",
+          "s1_address": "3Floor Plot No-5 Opposite, Dani Complex, P.R. Marg, Ajmer, Rajasthan",
+          "target_id": "S2-268332921",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-676773249",
+          "s1_name": "IHI Fresh Payments, LLC",
+          "s1_address": "224 Washington Avenue, MN, Minneapolis",
+          "target_id": "S2-77969369",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-20830072",
+          "s1_name": "Super Hospitality Private Limited",
+          "s1_address": "North West Delhi, Plot No. 16, Delhi, Village Kirari, Landmark Nr. Kirari Bus Stop, Delhi",
+          "target_id": "S2-378828093",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-246903177",
+          "s1_name": "Board of Education Corp",
+          "s1_address": "13 Evarts Avenue, Elmsford, NY",
+          "target_id": "S2-144176498",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-487045563",
+          "s1_name": "Benitez Green Phoenix Inc",
+          "s1_address": "1727 Walker Cup Circle, Thousand Oaks, CA",
+          "target_id": "S2-456967661",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-186528985",
+          "s1_name": "YF Infra Pvt Ltd",
+          "s1_address": "S1, Sri Durgai Apts, Ramamorthy Street, Kurunji Nagar, Chennai, No.7, Tamil Nadu, Chrompet",
+          "target_id": "S2-683753567",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-238950219",
+          "s1_name": "Pietila Staffing, LLC",
+          "s1_address": "10604 Allie Court, Spotsylvania County, VA",
+          "target_id": "S3-723943056",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-238950219",
+          "s1_name": "Pietila Staffing, LLC",
+          "s1_address": "10604 Allie Court, Spotsylvania County, VA",
+          "target_id": "S3-579310141",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-816852060",
+          "s1_name": "Christ Synagogue",
+          "s1_address": "22 Aaron Street, Berea, OH",
+          "target_id": "S3-66341456",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-779742420",
+          "s1_name": "Harbor Charities V",
+          "s1_address": "520 Highway 1 W, Iowa City, IA",
+          "target_id": "S3-39435103",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-212907936",
+          "s1_name": "Prime Trading Limited",
+          "s1_address": "1117 Maker Chambers V11Th Floor Nariman Point, Mumbai, Maharashtra",
+          "target_id": "S2-721624685",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-212907936",
+          "s1_name": "Prime Trading Limited",
+          "s1_address": "1117 Maker Chambers V11Th Floor Nariman Point, Mumbai, Maharashtra",
+          "target_id": "S2-765053018",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-45901546",
+          "s1_name": "Alfi Peters Inpoint LLC",
+          "s1_address": "5125 Scholls Ferry Road, Unit #30, Portland, OR",
+          "target_id": "S3-337226406",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-737534954",
+          "s1_name": "Desert Initiative Inc",
+          "s1_address": "723 Grubb Drive, Mesquite, TX",
+          "target_id": "S3-152930732",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-737534954",
+          "s1_name": "Desert Initiative Inc",
+          "s1_address": "723 Grubb Drive, Mesquite, TX",
+          "target_id": "S3-553489321",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-480316414",
+          "s1_name": "Swastik Exports Private Limited",
+          "s1_address": "22, Lee Road, 1St Floor, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-883796909",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-480316414",
+          "s1_name": "Swastik Exports Private Limited",
+          "s1_address": "22, Lee Road, 1St Floor, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-625698242",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-609491435",
+          "s1_name": "Bharat Alpha Foundation Private Limited",
+          "s1_address": "Plot No 7538 Ayappakkam, Chennai, Tamil Nadu",
+          "target_id": "S2-798223803",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-609491435",
+          "s1_name": "Bharat Alpha Foundation Private Limited",
+          "s1_address": "Plot No 7538 Ayappakkam, Chennai, Tamil Nadu",
+          "target_id": "S3-265078705",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-927337002",
+          "s1_name": "Ace International Private Limited",
+          "s1_address": "D-170 Iind Floor, Anand Vihar, Delhi, East Delhi",
+          "target_id": "S2-407677558",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-40555847",
+          "s1_name": "Brightium Urban",
+          "s1_address": "3712 22nd Street, Lubbock, TX",
+          "target_id": "S2-615043787",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-762177613",
+          "s1_name": "Ace Constructions Private Limited",
+          "s1_address": "Saptagiri Nilayam, 123/A, 1St Floor, 4Th Cross, 27Th Main, Sector-1, Hsr Layout, Bangalore, Karnataka",
+          "target_id": "S2-100080376",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-719277082",
+          "s1_name": "Placement Land Limited",
+          "s1_address": "Off No.904, Plot No.E/3A, Sec-12, Kharghar, Panvel, Raigarh(Mh), Maharashtra",
+          "target_id": "S2-583423706",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-340142244",
+          "s1_name": "New Delhi Aids Private Limited",
+          "s1_address": "C-9, Okhla Industrial Area Ph-I, New Delhi, South Delhi, Delhi",
+          "target_id": "S2-101202826",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-520154810",
+          "s1_name": "Hirsch's Express Maintenance",
+          "s1_address": "425 15th Street, Snohomish, WA",
+          "target_id": "S3-810528982",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-134822808",
+          "s1_name": "Waterlink & Sons Public Limited",
+          "s1_address": "E-21/25 (New E-21/990), Gali No 21, East Gokalpur, Delhi North East, North West Delhi, Delhi",
+          "target_id": "S3-514703654",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-255353417",
+          "s1_name": "Paul Investments Inc",
+          "s1_address": "2529 Highway 25-70, Del Rio, TN",
+          "target_id": "S3-958168668",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-245812765",
+          "s1_name": "Supreme Constructions Private Limited",
+          "s1_address": "Rajinder Nagar, New Delhi, R-815(B-11), Central Delhi, New Delhi, Delhi",
+          "target_id": "S3-598018417",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-678912008",
+          "s1_name": "XW Security Private Limited",
+          "s1_address": "Marshal House, Room No.234, 2Nd Floor 33/1, Netaji Subhas Road, Kolkata, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-400974635",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-255342663",
+          "s1_name": "Gujarat Producer Private Limited",
+          "s1_address": "G-242, Sector-Beta-2, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh",
+          "target_id": "S2-699369546",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-255342663",
+          "s1_name": "Gujarat Producer Private Limited",
+          "s1_address": "G-242, Sector-Beta-2, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh",
+          "target_id": "S2-441376813",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-551716415",
+          "s1_name": "Ace Hospitality LLC",
+          "s1_address": "Unit 1, Boston, 291 Dorchester Street, MA",
+          "target_id": "S2-506278490",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-551716415",
+          "s1_name": "Ace Hospitality LLC",
+          "s1_address": "Unit 1, Boston, 291 Dorchester Street, MA",
+          "target_id": "S2-327900999",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-493362132",
+          "s1_name": "Haney Apex Environmental LLC",
+          "s1_address": "IA, Ottumwa, 120 Ash Street",
+          "target_id": "S2-826747846",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-404711972",
+          "s1_name": "Superior Hospitality Enterprises Inc",
+          "s1_address": "286 Brentwood Drive, Painesville City, OH",
+          "target_id": "S3-873173896",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-381320753",
+          "s1_name": "Bright Food Private Limited",
+          "s1_address": "Flat No 1 Tatva Bhavna Pest-Om Sagar Road No2 Chembur, Mumbai, Maharashtra",
+          "target_id": "S3-668879280",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-110865413",
+          "s1_name": "3696 Washington Drive Company",
+          "s1_address": "12225 Troon Court, Fl 0, Wichita, KS",
+          "target_id": "S3-789678769",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-211473241",
+          "s1_name": "Petrichor Materials Private Limited",
+          "s1_address": "Gurgaon, 5Th Floor, Spaze Platinum Tower, Sector-47, Sohna Road, Gurugram, Haryana, Gurgaon, 518, Haryana, Gurgaon",
+          "target_id": "S3-309637952",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-152882201",
+          "s1_name": "R & K Bond LLC",
+          "s1_address": "1835 Jacquelyn Drive, Houston, TX",
+          "target_id": "S3-745531589",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-252658427",
+          "s1_name": "Kumar Solutions Private Limited",
+          "s1_address": "Howrah, West Bengal, Dn-12, Kolkata, 8Th Floor, Salt Lake, Sec5, Near Matrix Tower, Kolkata",
+          "target_id": "S3-666470773",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-681703702",
+          "s1_name": "Chandravi Ventures Private Limited",
+          "s1_address": "Ginserv, Bangalore, Karnataka, Site No. 1, Hal 3Rd Stage, Behind Hotel Leela Palace, Kodihalli, Bengaluru",
+          "target_id": "S3-113107176",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-450598746",
+          "s1_name": "RK Lifestyles Public Limited",
+          "s1_address": "D.No.1-7-74/79, Shop No24, Devaki Chambers, Sd Road, Secunderabad, Hyderabad, Telangana",
+          "target_id": "S3-820012018",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-766108997",
+          "s1_name": "Shiv Trading LLP",
+          "s1_address": "Uttar Pradesh, Ghaziabad, Enclave Ghaziabad, 72And73 Road No-5 Ratan",
+          "target_id": "S3-920014868",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-567701016",
+          "s1_name": "Super Gujarat Investment Private Limited",
+          "s1_address": "D, Plot No.57, Near Lic, Old Civil Hospital, Sirsa, Haryana",
+          "target_id": "S2-180972296",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-567701016",
+          "s1_name": "Super Gujarat Investment Private Limited",
+          "s1_address": "D, Plot No.57, Near Lic, Old Civil Hospital, Sirsa, Haryana",
+          "target_id": "S2-949086787",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-235736062",
+          "s1_name": "Celle Gong, D.C., PC",
+          "s1_address": "9001 East Drive, Austin, TX",
+          "target_id": "S2-232208910",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-235736062",
+          "s1_name": "Celle Gong, D.C., PC",
+          "s1_address": "9001 East Drive, Austin, TX",
+          "target_id": "S3-627568613",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-108049319",
+          "s1_name": "Construction Swastik Services Pvt. Ltd.",
+          "s1_address": "Flat No. 801, Bldg - R, Madhuvanti Nanded City, Sinhagad Road, Haveli, Pune, Maharashtra",
+          "target_id": "S2-419219159",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-120633451",
+          "s1_name": "Foot & Ankle Regional Group PLLC",
+          "s1_address": "Peoria, 29430 119th Lane, AZ",
+          "target_id": "S2-162629600",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-120633451",
+          "s1_name": "Foot & Ankle Regional Group PLLC",
+          "s1_address": "Peoria, 29430 119th Lane, AZ",
+          "target_id": "S3-175345646",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-368031431",
+          "s1_name": "Baba Investment",
+          "s1_address": "Food & Poly Park, Plot No-N2, Dhulagori, Sankrail, Howrah, West Bengal",
+          "target_id": "S3-733426593",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-78776687",
+          "s1_name": "Great Producer Private Limited",
+          "s1_address": "G-6, Ground Floor, O.K. Plus Space F-45 Malviya Nagar Industrial Area, Near Apex, Circle, Jaipur, Rajasthan",
+          "target_id": "S3-682598148",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-806070289",
+          "s1_name": "Mona Green Private Limited",
+          "s1_address": "Swapanasaj, Shiv Shakti Colony, Block No. 100, Opp: Bhagatsinh Garden, University Road, Rajkot, Gujarat",
+          "target_id": "S2-907062465",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-612764892",
+          "s1_name": "Sree Aditya Management",
+          "s1_address": "1-2-16/6C, Kakatiya Nagar Colony, Secunderabad, Hyderabad, Telangana",
+          "target_id": "S2-833825542",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-612764892",
+          "s1_name": "Sree Aditya Management",
+          "s1_address": "1-2-16/6C, Kakatiya Nagar Colony, Secunderabad, Hyderabad, Telangana",
+          "target_id": "S3-485992351",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-98771193",
+          "s1_name": "Smart Consultancy Limited",
+          "s1_address": "Shop No.2, Ground Floor, Ram Niwas, Building No.10 Gazdar Street, Chirabazar, Kalbadevi, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S2-251255932",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-650140172",
+          "s1_name": "747 Sunset Way Owners Corp L.L.C.",
+          "s1_address": "4201 Cove Drive W, Moses Lake, WA",
+          "target_id": "S2-456894203",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-849320948",
+          "s1_name": "Smart Pioneer Core",
+          "s1_address": "4128 Kalayne Lane, Clarence, NY",
+          "target_id": "S2-554732078",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-837076590",
+          "s1_name": "Arihant Big Estate Pvt Ltd",
+          "s1_address": "7Th Floor, Indra Complex, Manjalpur, Vadodara, Gujarat",
+          "target_id": "S2-194727548",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-945621153",
+          "s1_name": "Guru Estate Private Limited",
+          "s1_address": "A/101, Sun Grace Apartment, Evershine, Gokhivare, Vasai (East), Palghar, Thane, Maharashtra",
+          "target_id": "S2-429471470",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-706144482",
+          "s1_name": "Koo Wallace, MD PLLC",
+          "s1_address": "15306 13th Avenue Court, Tacoma, WA",
+          "target_id": "S3-894505111",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-208841156",
+          "s1_name": "Global Green Durga LLP",
+          "s1_address": "Zafrabad Jafarabad, Jaunpur, Uttar Pradesh, Jaunpur",
+          "target_id": "S2-16267271",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-607326165",
+          "s1_name": "Jackson Forefront",
+          "s1_address": "645 Riverside Drive, Omak, WA",
+          "target_id": "S3-395393779",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-536419722",
+          "s1_name": "Primary Care Clinic Inc",
+          "s1_address": "12 Indian Lane, Sharon, MA",
+          "target_id": "S3-649159712",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-961621104",
+          "s1_name": "Indian Foods Private Limited",
+          "s1_address": "Chennai, 13/1 Andiyappan Street Old Washermenpet, Tamil Nadu, Chennai",
+          "target_id": "S2-656892931",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-961621104",
+          "s1_name": "Indian Foods Private Limited",
+          "s1_address": "Chennai, 13/1 Andiyappan Street Old Washermenpet, Tamil Nadu, Chennai",
+          "target_id": "S2-743135805",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-961621104",
+          "s1_name": "Indian Foods Private Limited",
+          "s1_address": "Chennai, 13/1 Andiyappan Street Old Washermenpet, Tamil Nadu, Chennai",
+          "target_id": "S3-852726698",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-573074826",
+          "s1_name": "Rochella Barber Dollar Inc",
+          "s1_address": "8 Highland Court, Mount Vernon, OH",
+          "target_id": "S3-353530327",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-89800867",
+          "s1_name": "Rvj Industries Private Limited",
+          "s1_address": "3A, Pollock Street, Keshowjee Chambers, Unit F, 3Rd Floor, Kolkata, Howrah, West Bengal",
+          "target_id": "S3-434456635",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-916571346",
+          "s1_name": "American Ministries LLC",
+          "s1_address": "8205 Magnolia Street, Houston, TX",
+          "target_id": "S2-554638052",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-869077635",
+          "s1_name": "Harriet Blanton Hill LP",
+          "s1_address": "2228 Sandra Drive, Midwest City, OK",
+          "target_id": "S3-148476688",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-697620284",
+          "s1_name": "Federal Graf",
+          "s1_address": "3806 Creekstone Boulevard, Bentonville, AR",
+          "target_id": "S3-699562868",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-686345723",
+          "s1_name": "Star Construction Private Limited",
+          "s1_address": "5-8 Nandyala Mandalam, Pandurangapuram, Kurnool, Allagadda, Kurnool, Andhra Pradesh",
+          "target_id": "S2-763042388",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-686345723",
+          "s1_name": "Star Construction Private Limited",
+          "s1_address": "5-8 Nandyala Mandalam, Pandurangapuram, Kurnool, Allagadda, Kurnool, Andhra Pradesh",
+          "target_id": "S3-275851970",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-94649494",
+          "s1_name": "Griffen Grifols",
+          "s1_address": "1271 J, Town Of Kinnickinnic, WI",
+          "target_id": "S2-99694657",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-669915246",
+          "s1_name": "Urban Infrastructure Pvt Ltd",
+          "s1_address": "S. No. 229/9A, Flat No. 2, I Floor, Vaishali Heights, Malwadi Road, Hadapsar, Pune, Maharashtra",
+          "target_id": "S3-656923364",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-627938214",
+          "s1_name": "Sunrise Power",
+          "s1_address": "Delhi, East Delhi, 61, 2Nd Floor, Vijay Block, Laxmi Nagar, East Delhi",
+          "target_id": "S2-773958249",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-627938214",
+          "s1_name": "Sunrise Power",
+          "s1_address": "Delhi, East Delhi, 61, 2Nd Floor, Vijay Block, Laxmi Nagar, East Delhi",
+          "target_id": "S2-899799796",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-627938214",
+          "s1_name": "Sunrise Power",
+          "s1_address": "Delhi, East Delhi, 61, 2Nd Floor, Vijay Block, Laxmi Nagar, East Delhi",
+          "target_id": "S2-560151291",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-198023931",
+          "s1_name": "Bogle, Young and Ryan Mountain L.L.C.",
+          "s1_address": "250 Combs Road, Unit 59, Queen Creek, AZ",
+          "target_id": "S3-714944020",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-134318315",
+          "s1_name": "Middle Heights LLP",
+          "s1_address": "31/5, Jangpura Extn., New Delhi, Delhi",
+          "target_id": "S2-894647775",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-174189732",
+          "s1_name": "Djs & Co",
+          "s1_address": "167F, Nandani 1, Dr. B Ambedkar Road Dadar (West) Next To Icici Bank Poonawadi, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-316895546",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-567591337",
+          "s1_name": "Seven Raj Marketing Pvt Ltd",
+          "s1_address": "A/501, Mohan Mansion, A-Wing, Gulmohar Road, Nr. Somaya Grd, Kurla, Ch, Unabhatti, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S2-277961251",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-567591337",
+          "s1_name": "Seven Raj Marketing Pvt Ltd",
+          "s1_address": "A/501, Mohan Mansion, A-Wing, Gulmohar Road, Nr. Somaya Grd, Kurla, Ch, Unabhatti, Mumbai, Mumbai City, Maharashtra",
+          "target_id": "S3-373582465",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-139006304",
+          "s1_name": "Verrus Rice LLC",
+          "s1_address": "2696 Main Street, Unit STE 3, Bath County, VA",
+          "target_id": "S2-88756895",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-176366316",
+          "s1_name": "Boone, Wallace & Carbajal LLC",
+          "s1_address": "7010 Radway Court, Fayetteville, NC",
+          "target_id": "S3-171318648",
+          "country": "US"
+        },
+        {
+          "s1_id": "S1-580365345",
+          "s1_name": "Swastik Software Private Limited",
+          "s1_address": "42/B, Chalapurathu, Kunnathunadu, Ernakulam, Kerala",
+          "target_id": "S2-501498360",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-580365345",
+          "s1_name": "Swastik Software Private Limited",
+          "s1_address": "42/B, Chalapurathu, Kunnathunadu, Ernakulam, Kerala",
+          "target_id": "S3-48536815",
+          "country": "India"
+        },
+        {
+          "s1_id": "S1-117250907",
+          "s1_name": "Anand Construction Limited",
+          "s1_address": "Khasra No 3331/3, Chhatrasal Nagar Colony, Chhatarpur, Madhya Pradesh",
+          "target_id": "S3-58818145",
+          "country": "India"
+        }
+      ],
+      "universe_name": "Universe B (Phase 1.5 Universe, ~496K Targets)",
+      "target_count": 453405,
+      "fit_time_seconds": 42.87628221511841,
+      "total_time_seconds": 52.44425082206726
+    },
+    {
+      "universe_name": "Universe C (Full 10.32M Target Corpus)",
+      "target_count": 10320219,
+      "total_queries": 1000,
+      "total_true_links": 3405,
+      "captured_true_links": 3003,
+      "blocking_recall": 0.8819383259911894,
+      "s2_true_links": 1625,
+      "s2_captured_links": 1455,
+      "s2_recall": 0.8953846153846153,
+      "s3_true_links": 1780,
+      "s3_captured_links": 1548,
+      "s3_recall": 0.8696629213483146,
+      "total_candidates": 137249,
+      "mean_candidates": 137.249,
+      "median_candidates": 43.0,
+      "p90_candidates": 514.1,
+      "p95_candidates": 524.0,
+      "p99_candidates": 525.0,
+      "max_candidates": 525,
+      "reduction_ratio": 0.9999867009605126,
+      "fit_time_seconds": 34.858094215393066,
+      "runtime_seconds": 450.84701561927795,
+      "total_time_seconds": 485.7173926830292,
+      "throughput_queries_per_sec": 2.218047287340723,
+      "peak_ram_mb": 1428.42578125
+    }
+  ],
+  "conclusions": {
+    "degradation_a_to_b": 0.027606461086637335,
+    "degradation_b_to_c": 0.06079295154185027,
+    "total_degradation_a_to_c": 0.0883994126284876,
+    "full_corpus_recall": 0.8819383259911894,
+    "full_corpus_s2_recall": 0.8953846153846153,
+    "full_corpus_s3_recall": 0.8696629213483146,
+    "full_corpus_mean_candidates": 137.249,
+    "full_corpus_p95_candidates": 524.0,
+    "full_corpus_max_candidates": 525
+  }
+}
