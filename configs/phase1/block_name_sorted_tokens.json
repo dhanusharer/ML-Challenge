@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-P1-002",
+  "block_family": "BLOCK FAMILY B — NAME TOKEN BUCKETS (SORTED TOKENS)",
+  "blocker_class": "SortedTokenNameBlocker",
+  "parameters": {
+    "strip_legal": true,
+    "country_aware": false,
+    "max_bucket_size": 1000
+  },
+  "description": "Inverted index on sorted tokens of the business name, providing permutation invariance against word-order transpositions."
+}

@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-P0-001",
+  "timestamp": "2026-09-25T07:57:10.445231+00:00",
+  "git_commit_if_available": "unavailable",
+  "data_version": "amazon-ml-challenge-2026-v1",
+  "validation_seed": 42,
+  "validation_fraction": 0.2,
+  "code_version": "0.1.0",
+  "notes": "Phase 0: Experiment and Evaluation Foundation established. Deterministic 80/20 entity split.",
+  "metrics": {
+    "train_entities": 1765457,
+    "val_entities": 441364,
+    "total_entities": 2206821
+  },
+  "extra_metadata": {
+    "total_entities": 2206821,
+    "train_entities": 1765457,
+    "val_entities": 441364,
+    "validation_fraction": 0.2,
+    "validation_seed": 42,
+    "split_policy": "PROJECT DESIGN CHOICE (Entity-level disjoint S1 split)",
+    "train_ids_hash": "7a83b93a4a935193c851c084d2436adaddaf0196beb6ce3a629fe97b9c7d470f",
+    "val_ids_hash": "af242d8b4cf0f30d771e109b499e0a34e0ffb51d216810ee421ae8133c3929ab"
+  }
+}

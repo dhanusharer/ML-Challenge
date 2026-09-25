@@ -1,0 +1,10 @@
+{
+  "experiment_id": "EXP-P1-006",
+  "block_family": "BLOCK FAMILY D — ADDRESS BLOCKS (POSTAL / PIN CODE)",
+  "blocker_class": "PostalCodeBlocker",
+  "parameters": {
+    "country_aware": true,
+    "max_bucket_size": 2000
+  },
+  "description": "Inverted index on extracted 5-digit and 6-digit postal/PIN codes."
+}

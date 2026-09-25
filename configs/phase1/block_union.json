@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-P1-010",
+  "block_family": "PROGRESSIVE UNION EXPERIMENTS",
+  "blocker_class": "UnionBlocker",
+  "parameters": {
+    "union_stages": [
+      "ExactNameBlocker",
+      "SortedTokenNameBlocker",
+      "CharNgramBoundaryBlocker",
+      "NamePostalHybridBlocker",
+      "NameNumericHybridBlocker"
+    ]
+  },
+  "description": "Progressive multi-strategy union combining exact name, sorted tokens, character boundary n-grams, and name-address hybrids."
+}

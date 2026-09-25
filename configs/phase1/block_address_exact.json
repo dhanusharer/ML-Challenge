@@ -1,0 +1,10 @@
+{
+  "experiment_id": "EXP-P1-005",
+  "block_family": "BLOCK FAMILY D — ADDRESS BLOCKS (EXACT)",
+  "blocker_class": "ExactAddressBlocker",
+  "parameters": {
+    "country_aware": true,
+    "max_bucket_size": 1000
+  },
+  "description": "Inverted index on cleaned country-scoped business address."
+}

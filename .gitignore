@@ -1,0 +1,78 @@
+# ==============================================================================
+# Amazon ML Challenge 2026 - .gitignore
+# ==============================================================================
+
+# --- Dataset and Large Raw Files ---
+# Raw competition data files are multi-gigabyte and should never be committed to Git.
+student_resource/
+*.tsv
+*.zip
+*.tar.gz
+*.parquet
+*.feather
+*.h5
+
+# --- Python Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Python Bytecode and Build Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Jupyter Notebooks Caches ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Testing and Coverage Caches ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- IDEs and Editor Artifacts ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.gemini/
+
+# --- Operating System Files ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Temporary Scratch and Diagnostic Scripts ---
+scratch/
+scratch_*.py
+test_recovery_diagnostics.py

@@ -1,0 +1,32 @@
+{
+  "project_name": "Amazon ML Challenge 2026 — Business Entity Resolution",
+  "phase": "Phase 0: Experiment and Evaluation Foundation",
+  "data": {
+    "train_source1_path": "student_resource/dataset/train/train_source1.tsv",
+    "train_source2_path": "student_resource/dataset/train/train_source2.tsv",
+    "train_source3_path": "student_resource/dataset/train/train_source3.tsv",
+    "train_ground_truth_path": "student_resource/dataset/train/train_ground_truth.tsv",
+    "test_source1_path": "student_resource/dataset/test/test_source1.tsv",
+    "test_source2_path": "student_resource/dataset/test/test_source2.tsv",
+    "test_source3_path": "student_resource/dataset/test/test_source3.tsv"
+  },
+  "validation": {
+    "validation_fraction": 0.20,
+    "validation_seed": 42,
+    "split_policy": "PROJECT DESIGN CHOICE (Entity-level disjoint S1 split; not an Amazon requirement)"
+  },
+  "metric": {
+    "beta": 0.5,
+    "formula": "F_0.5 = (1.25 * Precision * Recall) / (0.25 * Precision + Recall)",
+    "aggregation": "Macro-averaged across all Source-1 entities including singletons"
+  },
+  "safeguards": {
+    "anti_scope_confirmed": [
+      "No blocking implemented",
+      "No candidate generation implemented",
+      "No matching model implemented",
+      "No external data lookup or geocoding used",
+      "No test set pseudo-labeling used"
+    ]
+  }
+}

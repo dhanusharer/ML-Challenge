@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-P1-009",
+  "block_family": "BLOCK FAMILY F — SPARSE TF-IDF RETRIEVAL",
+  "blocker_class": "SparseTfidfBlocker",
+  "parameters": {
+    "analyzer": "char",
+    "ngram_range": [3, 4],
+    "top_k": 25,
+    "min_df": 2,
+    "max_df": 0.5,
+    "max_features": 50000
+  },
+  "description": "Sparse TF-IDF sublinear top-k candidate generator using character 3-4 grams."
+}

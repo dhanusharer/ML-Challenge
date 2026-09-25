@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-P1-001",
+  "block_family": "BLOCK FAMILY A — EXACT NORMALIZED NAME",
+  "blocker_class": "ExactNameBlocker",
+  "parameters": {
+    "strip_legal": true,
+    "country_aware": false,
+    "max_bucket_size": 1000
+  },
+  "description": "Inverted index on exact business name with Unicode NFKC, lowercase, punctuation removed, and legal suffixes stripped."
+}

@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-P1-004",
+  "block_family": "BLOCK FAMILY C — CHARACTER N-GRAMS",
+  "blocker_class": "CharNgramBoundaryBlocker",
+  "parameters": {
+    "n": 4,
+    "country_aware": false,
+    "max_bucket_size": 1000
+  },
+  "description": "Boundary character 4-gram compound index capturing internal typos and spelling mutations."
+}

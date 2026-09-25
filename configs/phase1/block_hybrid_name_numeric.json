@@ -1,0 +1,10 @@
+{
+  "experiment_id": "EXP-P1-008",
+  "block_family": "BLOCK FAMILY E — NAME + ADDRESS HYBRIDS (NAME + NUMERIC)",
+  "blocker_class": "NameNumericHybridBlocker",
+  "parameters": {
+    "min_token_len": 3,
+    "max_bucket_size": 500
+  },
+  "description": "Compound index combining first informative name token with address numeric token (house/plot number)."
+}

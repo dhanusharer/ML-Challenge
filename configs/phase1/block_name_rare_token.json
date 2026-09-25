@@ -1,0 +1,12 @@
+{
+  "experiment_id": "EXP-P1-003",
+  "block_family": "BLOCK FAMILY B — NAME TOKEN BUCKETS (RARE TOKENS)",
+  "blocker_class": "RareTokenNameBlocker",
+  "parameters": {
+    "min_token_len": 3,
+    "max_token_freq": 1000,
+    "max_bucket_size": 500,
+    "country_aware": false
+  },
+  "description": "Inverted index on the rarest / most informative token in each business name, bounded by corpus frequency caps."
+}
