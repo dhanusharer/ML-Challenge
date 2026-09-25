@@ -1,0 +1,25 @@
+cohort_size,error_type,category,count,fraction
+75,False_Positive,Commercial cluster / street distractor,5,0.16666666666666666
+75,False_Positive,High lexical similarity,24,0.8
+75,False_Positive,Cross-script confusion,1,0.03333333333333333
+75,False_Negative,Address missing / severely truncated,3,0.42857142857142855
+75,False_Negative,Cross-script non-Latin target,3,0.42857142857142855
+75,False_Negative,Name / legal transformation distractor,1,0.14285714285714285
+1000,False_Positive,Commercial cluster / street distractor,42,0.19534883720930232
+1000,False_Positive,High lexical similarity,148,0.6883720930232559
+1000,False_Positive,Cross-script confusion,16,0.07441860465116279
+1000,False_Positive,Generic tokens overlap,9,0.04186046511627907
+1000,False_Negative,Address missing / severely truncated,25,0.3125
+1000,False_Negative,Cross-script non-Latin target,12,0.15
+1000,False_Negative,Name / legal transformation distractor,28,0.35
+1000,False_Negative,Domain / URL syntax alias,15,0.1875
+5000,False_Positive,Commercial cluster / street distractor,176,0.2186335403726708
+5000,False_Positive,High lexical similarity,519,0.6447204968944099
+5000,False_Positive,Cross-script confusion,66,0.08198757763975155
+5000,False_Positive,Generic tokens overlap,42,0.05217391304347826
+5000,False_Positive,Domain collision,2,0.002484472049689441
+5000,False_Negative,Address missing / severely truncated,115,0.3168044077134986
+5000,False_Negative,Cross-script non-Latin target,62,0.17079889807162535
+5000,False_Negative,Name / legal transformation distractor,139,0.38292011019283745
+5000,False_Negative,Domain / URL syntax alias,46,0.12672176308539945
+5000,False_Negative,Extreme address truncation,1,0.0027548209366391185

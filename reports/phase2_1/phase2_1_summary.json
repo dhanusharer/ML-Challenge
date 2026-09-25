@@ -1,0 +1,182 @@
+{
+  "phase": "2.1",
+  "objective": "Generalization, Leakage & Stability Gate",
+  "evaluated_cohorts": [
+    75,
+    1000,
+    5000,
+    25000
+  ],
+  "total_runtime_seconds": 2364.4,
+  "peak_ram_mb": 1950.0,
+  "arm_b_vs_c_summary": [
+    {
+      "cohort_size": 75,
+      "candidate_arm": "ARM_B",
+      "blocking_recall": 0.9395,
+      "mean_candidates_per_query": 44.19,
+      "total_candidate_pairs": 3314,
+      "cand_pr_auc": 0.98795,
+      "cand_roc_auc": 0.99811,
+      "diagnostic_macro_f05": 0.91623,
+      "diagnostic_precision": 0.92855,
+      "diagnostic_recall": 0.91217,
+      "end_to_end_link_recall": 0.91459,
+      "best_threshold": 0.7,
+      "eval_time_seconds": 15.32
+    },
+    {
+      "cohort_size": 75,
+      "candidate_arm": "ARM_C",
+      "blocking_recall": 0.968,
+      "mean_candidates_per_query": 83.99,
+      "total_candidate_pairs": 6299,
+      "cand_pr_auc": 0.97993,
+      "cand_roc_auc": 0.99763,
+      "diagnostic_macro_f05": 0.91917,
+      "diagnostic_precision": 0.92941,
+      "diagnostic_recall": 0.92661,
+      "end_to_end_link_recall": 0.92527,
+      "best_threshold": 0.7,
+      "eval_time_seconds": 24.51
+    },
+    {
+      "cohort_size": 1000,
+      "candidate_arm": "ARM_B",
+      "blocking_recall": 0.95564,
+      "mean_candidates_per_query": 43.58,
+      "total_candidate_pairs": 43575,
+      "cand_pr_auc": 0.99181,
+      "cand_roc_auc": 0.99892,
+      "diagnostic_macro_f05": 0.93341,
+      "diagnostic_precision": 0.9427,
+      "diagnostic_recall": 0.92891,
+      "end_to_end_link_recall": 0.93244,
+      "best_threshold": 0.8,
+      "eval_time_seconds": 38.64
+    },
+    {
+      "cohort_size": 1000,
+      "candidate_arm": "ARM_C",
+      "blocking_recall": 0.969,
+      "mean_candidates_per_query": 86.7,
+      "total_candidate_pairs": 86698,
+      "cand_pr_auc": 0.98904,
+      "cand_roc_auc": 0.99885,
+      "diagnostic_macro_f05": 0.93444,
+      "diagnostic_precision": 0.94144,
+      "diagnostic_recall": 0.93634,
+      "end_to_end_link_recall": 0.93969,
+      "best_threshold": 0.8,
+      "eval_time_seconds": 61.22
+    },
+    {
+      "cohort_size": 5000,
+      "candidate_arm": "ARM_B",
+      "blocking_recall": 0.9623,
+      "mean_candidates_per_query": 43.33,
+      "total_candidate_pairs": 216672,
+      "cand_pr_auc": 0.99203,
+      "cand_roc_auc": 0.99896,
+      "diagnostic_macro_f05": 0.93837,
+      "diagnostic_precision": 0.94806,
+      "diagnostic_recall": 0.93087,
+      "end_to_end_link_recall": 0.93772,
+      "best_threshold": 0.8,
+      "eval_time_seconds": 228.61
+    },
+    {
+      "cohort_size": 5000,
+      "candidate_arm": "ARM_C",
+      "blocking_recall": 0.9754,
+      "mean_candidates_per_query": 88.28,
+      "total_candidate_pairs": 441420,
+      "cand_pr_auc": 0.9894,
+      "cand_roc_auc": 0.99886,
+      "diagnostic_macro_f05": 0.93917,
+      "diagnostic_precision": 0.94653,
+      "diagnostic_recall": 0.9382,
+      "end_to_end_link_recall": 0.94584,
+      "best_threshold": 0.8,
+      "eval_time_seconds": 303.42
+    },
+    {
+      "cohort_size": 25000,
+      "candidate_arm": "ARM_B",
+      "blocking_recall": 0.9574,
+      "mean_candidates_per_query": 44.43,
+      "total_candidate_pairs": 1110672,
+      "cand_pr_auc": 0.99182,
+      "cand_roc_auc": 0.99891,
+      "diagnostic_macro_f05": 0.9329,
+      "diagnostic_precision": 0.9452,
+      "diagnostic_recall": 0.9255,
+      "end_to_end_link_recall": 0.9356,
+      "best_threshold": 0.8,
+      "eval_time_seconds": 568.2
+    },
+    {
+      "cohort_size": 25000,
+      "candidate_arm": "ARM_C",
+      "blocking_recall": 0.9716,
+      "mean_candidates_per_query": 98.36,
+      "total_candidate_pairs": 2459053,
+      "cand_pr_auc": 0.98901,
+      "cand_roc_auc": 0.9988,
+      "diagnostic_macro_f05": 0.933,
+      "diagnostic_precision": 0.9418,
+      "diagnostic_recall": 0.9312,
+      "end_to_end_link_recall": 0.9443,
+      "best_threshold": 0.8,
+      "eval_time_seconds": 1124.5
+    }
+  ],
+  "feature_generalization": [
+    {
+      "experiment_id": "G1_Name_Only",
+      "feature_count": "10",
+      "audit_cohort_size": "1000",
+      "cand_pr_auc": "0.5794725938743598",
+      "cand_roc_auc": "0.9522491423293402",
+      "diagnostic_macro_f05": "0.7279918239784212",
+      "optimal_threshold": "0.7"
+    },
+    {
+      "experiment_id": "G1_G2_Name_Address",
+      "feature_count": "18",
+      "audit_cohort_size": "1000",
+      "cand_pr_auc": "0.9865799736646216",
+      "cand_roc_auc": "0.9984151840969914",
+      "diagnostic_macro_f05": "0.9193823206800401",
+      "optimal_threshold": "0.7"
+    },
+    {
+      "experiment_id": "G1_G2_G3_Core_Country",
+      "feature_count": "21",
+      "audit_cohort_size": "1000",
+      "cand_pr_auc": "0.987753431914997",
+      "cand_roc_auc": "0.998621903635974",
+      "diagnostic_macro_f05": "0.9186928303233053",
+      "optimal_threshold": "0.7"
+    },
+    {
+      "experiment_id": "G1_G2_G3_G5_Provenance",
+      "feature_count": "30",
+      "audit_cohort_size": "1000",
+      "cand_pr_auc": "0.9887014337737476",
+      "cand_roc_auc": "0.998681673332149",
+      "diagnostic_macro_f05": "0.9248977402015771",
+      "optimal_threshold": "0.7"
+    },
+    {
+      "experiment_id": "Full_43_Feature_Set",
+      "feature_count": "43",
+      "audit_cohort_size": "1000",
+      "cand_pr_auc": "0.9918141532252769",
+      "cand_roc_auc": "0.9989215128905495",
+      "diagnostic_macro_f05": "0.9295807124496681",
+      "optimal_threshold": "0.7"
+    }
+  ],
+  "leakage_audit_result": "ZERO LEAKAGE DETECTED"
+}
