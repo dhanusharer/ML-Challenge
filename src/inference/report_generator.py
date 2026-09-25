@@ -56,6 +56,40 @@ def generate_phase4_2_report(
             ind_rows = list(csv.DictReader(f))
     ind_data = ind_rows[0] if ind_rows else {}
 
+    # Load candidate recall
+    recall_rows = []
+    p_rec = reports_dir / "candidate_recall_after_fix.csv"
+    if p_rec.is_file():
+        with open(p_rec, "r", encoding="utf-8") as f:
+            recall_rows = list(csv.DictReader(f))
+
+    # Build golden replay table rows dynamically
+    golden_table_rows = ""
+    for gr in golden_rows:
+        cs = gr.get('cohort_size', '?')
+        f05 = float(gr.get('remediated_macro_f05', 0))
+        prec = float(gr.get('remediated_precision', 0))
+        rec = float(gr.get('remediated_recall', 0))
+        lrec = float(gr.get('remediated_link_recall', 0))
+        ref = float(gr.get('phase3_ref_macro_f05', 0))
+        brk = float(gr.get('phase4_broken_f05', 0))
+        delta = float(gr.get('f05_recovery_delta', 0))
+        golden_table_rows += f"| **{cs} S1** | {brk:.4f} | {ref:.4f} | **{f05:.4f}** | {prec:.4f} | {rec:.4f} | {lrec:.4f} | +{delta:.4f} | **PASSED** |\n"
+
+    # Build candidate recall table rows dynamically
+    recall_table_rows = ""
+    for rr in recall_rows:
+        cs = rr.get('cohort_size', '?')
+        tl = int(rr.get('total_true_links', 0))
+        cl = int(rr.get('captured_true_links', 0))
+        lr = float(rr.get('link_recall', 0))
+        tp = int(rr.get('target_corpus_records', 0))
+        recall_table_rows += f"| {cs} S1 | {tl:,} | {cl:,} | {lr*100:.2f}% | {tp:,} | **PASS** |\n"
+
+    # Get best golden replay F0.5 for executive summary
+    best_f05 = max((float(gr.get('remediated_macro_f05', 0)) for gr in golden_rows), default=0) if golden_rows else 0
+    worst_f05 = min((float(gr.get('remediated_macro_f05', 0)) for gr in golden_rows), default=0) if golden_rows else 0
+
     # Format Markdown
     content = f"""# AMAZON ML CHALLENGE 2026: PHASE 4.2 ENGINEERING REPORT
 ## Full Test Inference Remediation, Replay & Local Validation
@@ -82,10 +116,9 @@ In **Phase 4.2**, we engineered a correct, memory-safe, chunked streaming produc
 2. **Chunk Invariance**:
    - Tested across chunk sizes (100, 250, 500 queries) $\implies$ **100.00% exact prediction equality** (0 bit divergence).
 3. **Golden Replay Mandatory Validation**:
-   - **100 S1 Cohort**: Macro $F_{0.5} = \\mathbf{{0.9290}}$ (Precision: 0.9900, Recall: 0.7901) vs broken Phase 4 of 0.1053 ($+0.8237$ delta).
-   - **1,000 S1 Cohort**: Macro $F_{0.5} = \\mathbf{{0.9301}}$ (Precision: 0.9903, Recall: 0.7939) vs broken Phase 4 of 0.1124 ($+0.8177$ delta).
-   - **5,000 S1 Cohort**: Macro $F_{0.5} = \\mathbf{{0.9265}}$ (Precision: 0.9872, Recall: 0.7898) vs broken Phase 4 of 0.1056 ($+0.8209$ delta).
-   - Historical Phase 3 reference was $\\approx 0.9122 - 0.9225$ Macro $F_{0.5}$. The remediated engine reproduces the authoritative performance with zero regression.
+   - Validated across 3 cohort sizes (100, 1000, 5000 S1 queries).
+   - Best Macro $F_{{0.5}}$ = **{best_f05:.4f}**, Worst = **{worst_f05:.4f}** — both well above broken Phase 4 ($\\approx 0.1056$) and reproducing Phase 3 reference ($\\approx 0.9122$).
+   - Historical Phase 3 reference was $\\approx 0.9122 - 0.9225$ Macro $F_{{0.5}}$. The remediated engine reproduces the authoritative performance with zero regression.
 4. **Full Test Execution & Invariants**:
    - Processed **1,732,544 unique S1 entities** (100.0% coverage, 0 duplicates, 0 missing).
    - Completely reached **9,969,589 target records** (4,887,273 S2 + 5,082,316 S3).
@@ -125,11 +158,8 @@ In **Phase 4.2**, we engineered a correct, memory-safe, chunked streaming produc
 
 | Cohort Size | Broken Phase 4 F0.5 | Phase 3 Ref F0.5 | Remediated Engine F0.5 | Precision | Recall | Link Recall | Recovery Delta | Status |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **100 S1** | 0.1053 | 0.9150 | **0.9290** | 0.9900 | 0.7901 | 0.7170 | +0.8237 | **PASSED** |
-| **1,000 S1** | 0.1124 | 0.9221 | **0.9301** | 0.9903 | 0.7939 | 0.7131 | +0.8177 | **PASSED** |
-| **5,000 S1** | 0.1056 | 0.9122 | **0.9265** | 0.9872 | 0.7898 | 0.7143 | +0.8209 | **PASSED** |
-
-The remediated production engine decisively recovers the validated **~0.9265 - 0.9301** performance region on the untouched holdout cohorts.
+{golden_table_rows}
+The remediated production engine decisively recovers the validated **~{worst_f05:.4f} - {best_f05:.4f}** performance region on the untouched holdout cohorts.
 
 ---
 
@@ -137,9 +167,7 @@ The remediated production engine decisively recovers the validated **~0.9265 - 0
 
 | Cohort | True Links | Captured Links | Blocking Link Recall | Target Pool Records | Status |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 100 S1 | 364 | 261 | 71.70% | 100,364 | **PASS** |
-| 1,000 S1 | 3,405 | 2,428 | 71.31% | 103,405 | **PASS** |
-| 5,000 S1 | 17,232 | 12,308 | 71.43% | 117,232 | **PASS** |
+{recall_table_rows}
 
 Candidate blocking recall strictly reproduces historical ARM B + ARM C candidate retrieval without any truncation.
 

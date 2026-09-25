@@ -545,30 +545,36 @@ class Phase42Orchestrator:
 
         # 2. Official Amazon Validator (Section 25)
         print("  Running Official Amazon Validator...", flush=True)
-        official_val_passed = validate_results_tsv(submission_tsv, self.test_dir)
+        # Load required S1 IDs from test_source1.tsv
+        s1_file = self.test_dir / "test_source1.tsv"
+        required_s1_ids = set()
+        with open(s1_file, "r", encoding="utf-8") as f:
+            next(f)
+            for line in f:
+                parts = line.rstrip("\r\n").split("\t")
+                if parts:
+                    required_s1_ids.add(parts[0])
+        from src.utils.env import EXPECTED_SUBMISSION_COLUMNS
+        _, val_errors, val_warnings = validate_results_tsv(
+            submission_tsv,
+            expected_header=EXPECTED_SUBMISSION_COLUMNS,
+            col_label="matched_entity_ids",
+            required_s1_ids=required_s1_ids,
+        )
+        official_val_passed = len(val_errors) == 0
+        if val_errors:
+            for e in val_errors:
+                print(f"    [ERROR] {e}")
+        if val_warnings:
+            for w in val_warnings:
+                print(f"    [WARN] {w}")
         print(f"  [Official Validator] Result: {'PASSED' if official_val_passed else 'FAILED'}\n")
 
         # 3. Reproducibility Re-Run (Section 27: 10,000 S1 queries)
         reproducibility_passed = True
         if run_reproducibility:
-            print("  [Reproducibility Gate] Re-running deterministic 10,000 S1 sample...", flush=True)
-            s1_file = self.test_dir / "test_source1.tsv"
-            sample_queries = []
-            with open(s1_file, "r", encoding="utf-8") as f:
-                next(f)
-                for i, line in enumerate(f):
-                    if i >= 10000:
-                        break
-                    parts = line.rstrip("\r\n").split("\t")
-                    if len(parts) >= 3:
-                        sample_queries.append({
-                            "entity_id": parts[0],
-                            "business_name": parts[1],
-                            "business_address": parts[2],
-                            "country": parts[3].upper() if len(parts) >= 4 else "",
-                        })
-
-            # Load expected predictions for these 10,000 S1 from the merged submission file
+            print("  [Reproducibility Gate] Verifying deterministic chunk-merge reproducibility (10,000 S1 sample)...", flush=True)
+            # Load first 10,000 predictions from merged submission file
             expected_preds = {}
             with open(submission_tsv, "r", encoding="utf-8") as f:
                 next(f)
@@ -580,10 +586,24 @@ class Phase42Orchestrator:
                     if len(expected_preds) >= 10000:
                         break
 
-            # Compare predictions
-            matches = sum(1 for q in sample_queries if expected_preds.get(q["entity_id"], []) == expected_preds.get(q["entity_id"], []))
-            print(f"    Reproducibility exact matches: {matches:,} / {len(sample_queries):,} (100.00%)")
-            reproducibility_passed = (matches == len(sample_queries))
+            # Load same S1 IDs from chunk_0000.tsv (independent source)
+            chunk0_file = self.output_dir / "chunks" / "chunk_0000.tsv"
+            chunk0_preds = {}
+            if chunk0_file.is_file():
+                with open(chunk0_file, "r", encoding="utf-8") as f:
+                    next(f)
+                    for line in f:
+                        parts = line.rstrip("\r\n").split("\t")
+                        sid = parts[0]
+                        m = parts[1].split(",") if len(parts) > 1 and parts[1].strip() else []
+                        chunk0_preds[sid] = m
+
+            # Compare chunk predictions against merged predictions
+            check_sids = list(expected_preds.keys())[:10000]
+            matches = sum(1 for sid in check_sids if expected_preds.get(sid, []) == chunk0_preds.get(sid, []))
+            match_pct = matches / len(check_sids) * 100 if check_sids else 0
+            print(f"    Reproducibility exact matches: {matches:,} / {len(check_sids):,} ({match_pct:.2f}%)")
+            reproducibility_passed = (matches == len(check_sids))
 
         # 4. Generate Distributions & Full Coverage CSVs (Sections 18, 19, 20)
         dist_rows = [{
