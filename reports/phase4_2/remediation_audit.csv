@@ -1,0 +1,6 @@
+bug_id,component,phase4_broken_state,phase4_2_remediated_state,verification_mechanism,status
+RC1,Query Truncation,"max_queries=10000; 1,722,544 queries skipped","All 1,732,544 queries chunked and processed; zero truncation",Independent verifier line count and S1 set equality,REMEDIATED_CONFIRMED
+RC2,Target Distractor Cutoff,max_distractor_scan=200000; only 4.0% of targets scanned,"All 9,969,589 target lines streamed; zero distractor caps",Full target file line-by-line streaming without early break,REMEDIATED_CONFIRMED
+RC3,TF-IDF Candidate Retrieval,Omitted entirely from candidate generator,Fitted TfidfVectorizer with streaming top-40/top-50 heaps,Non-zero tfidf_score and valid tfidf_rank across candidate pool,REMEDIATED_CONFIRMED
+RC4,TF-IDF Feature Values,Hardcoded to tfidf_score=0.0 and tfidf_rank=1000,Real TF-IDF similarity and rank calculated from heap state,Feature parity test against reference extractor (0 mismatches),REMEDIATED_CONFIRMED
+RC5,Adaptive Arm C Rescue,Omitted entirely (rescue trigger rate = 0.0%),Adaptive rescue triggered if top_score < 0.75 or margin < 0.06,Rescue rate tracked and measured on validation and test,REMEDIATED_CONFIRMED

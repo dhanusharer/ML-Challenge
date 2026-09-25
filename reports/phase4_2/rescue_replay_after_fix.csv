@@ -1,0 +1,2 @@
+rescue_arm,trigger_condition,rescue_enabled,status
+ARM_C,top_score < 0.75 or top1_top2_margin < 0.06,True,PASS

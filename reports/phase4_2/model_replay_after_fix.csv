@@ -1,0 +1,2 @@
+model_type,model_hash,lightgbm_version,max_prob_diff,status
+LightGBMMatcher,649399051357baaf7b4a2c789f2350c725686de3ea08e3874544d8f66393ccb7,4.3.0,0.0,PASS
