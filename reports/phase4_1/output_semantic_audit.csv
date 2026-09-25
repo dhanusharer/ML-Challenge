@@ -1,0 +1,2 @@
+total_rows,unique_s1_entities,empty_prediction_count,empty_prediction_pct,one_match_count,one_match_pct,two_match_count,two_match_pct,three_match_count,three_match_pct,three_plus_count,three_plus_pct,total_predicted_matches,avg_matches_per_s1,s2_target_count,s2_target_pct,s3_target_count,s3_target_pct,semantic_integrity_status
+1732544,1732544,1730488,0.9988133057515423,1668,0.0009627461120756529,192,0.00011081969635403198,196,0.00011312844002807433,0,0.0,2640,0.0015237708248679398,1230,0.4659090909090909,1410,0.5340909090909091,PATHOLOGICAL_CANDIDATE_COLLAPSE

@@ -1,0 +1,2 @@
+rescue_algorithm,specified_rescue_trigger,phase3_rescue_trigger_rate,phase3_rescue_candidate_count_mean,phase3_rescue_recall_gain,phase4_test_rescue_trigger_rate,phase4_test_rescue_execution,rescue_implementation_bug,status_verdict
+AdaptiveRescueCoordinator (Arm B -> Arm C Cascade),top_candidate_score < 0.75 or top1_top2_margin < 0.06,0.192,14.8,0.0132,0.0,OMITTED_ENTIRELY_FROM_PRODUCTION_GENERATOR,True,CRITICAL_MISSING_RESCUE_CASCADE

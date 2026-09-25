@@ -1,0 +1,44 @@
+feature_index,feature_name,dtype,val_expected_range,test_production_distortion,distribution_shift_severity
+0,name_exact_clean,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+1,name_compact_exact,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+2,name_token_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW
+3,name_token_overlap_coeff,float64,numeric,COMPUTED_NORMALLY,LOW
+4,name_char_ngram_cosine,float64,numeric,COMPUTED_NORMALLY,LOW
+5,name_edit_similarity,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+6,name_prefix_match_len,float64,numeric,COMPUTED_NORMALLY,LOW
+7,name_length_ratio,float64,numeric,COMPUTED_NORMALLY,LOW
+8,name_first_token_match,float64,numeric,COMPUTED_NORMALLY,LOW
+9,name_sorted_token_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW
+10,addr_exact_clean,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+11,addr_token_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW
+12,addr_token_overlap_coeff,float64,numeric,COMPUTED_NORMALLY,LOW
+13,addr_char_ngram_cosine,float64,numeric,COMPUTED_NORMALLY,LOW
+14,addr_numeric_exact_match,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+15,addr_numeric_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW
+16,addr_postal_match,float64,numeric,COMPUTED_NORMALLY,LOW
+17,addr_is_missing_either,float64,numeric,COMPUTED_NORMALLY,LOW
+18,country_exact_match,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+19,source_is_s2,float64,numeric,COMPUTED_NORMALLY,LOW
+20,source_is_s3,float64,numeric,COMPUTED_NORMALLY,LOW
+21,is_cross_script_pair,float64,numeric,COMPUTED_NORMALLY,LOW
+22,translit_name_token_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW
+23,translit_name_char_ngram_cosine,float64,numeric,COMPUTED_NORMALLY,LOW
+24,is_domain_name_pair,float64,numeric,COMPUTED_NORMALLY,LOW
+25,domain_compact_match,float64,numeric,COMPUTED_NORMALLY,LOW
+26,leetspeak_exact_match,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+27,accent_stripped_match,float64,numeric,COMPUTED_NORMALLY,LOW
+28,shared_rare_token_count,float64,numeric,COMPUTED_NORMALLY,LOW
+29,min_shared_token_idf,float64,numeric,COMPUTED_NORMALLY,LOW
+30,retrieval_support_count,float64,numeric,COMPUTED_NORMALLY,LOW
+31,retrieved_by_exact_name,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+32,retrieved_by_sorted_name,float64,numeric,COMPUTED_NORMALLY,LOW
+33,retrieved_by_name_numeric,float64,numeric,COMPUTED_NORMALLY,LOW
+34,retrieved_by_char_ngram,float64,numeric,COMPUTED_NORMALLY,LOW
+35,retrieved_by_domain,float64,numeric,COMPUTED_NORMALLY,LOW
+36,retrieved_by_tfidf,float64,numeric,HARDCODED_TO_ZERO_OR_1000,CRITICAL_MODEL_BLINDING
+37,tfidf_similarity_score,float64,"[0.0, 1.0]",HARDCODED_TO_ZERO_OR_1000,CRITICAL_MODEL_BLINDING
+38,tfidf_rank,float64,numeric,HARDCODED_TO_ZERO_OR_1000,CRITICAL_MODEL_BLINDING
+39,inter_name_x_addr_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW
+40,inter_name_exact_x_addr_jaccard,float64,"[0.0, 1.0]",COMPUTED_NORMALLY,LOW
+41,inter_name_jaccard_x_country,float64,numeric,COMPUTED_NORMALLY,LOW
+42,inter_support_x_name_jaccard,float64,numeric,COMPUTED_NORMALLY,LOW

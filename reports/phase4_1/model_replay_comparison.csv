@@ -1,0 +1,2 @@
+model_type,lightgbm_version,n_estimators,max_depth,num_leaves,learning_rate,random_state,objective,feature_count,prediction_dtype,model_reproducibility
+LightGBMMatcher (GradientBoostedDecisionTrees),4.3.0,100,6,31,0.08,42,binary:logistic,43,float64,DETERMINISTIC_PASS

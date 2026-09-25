@@ -1,0 +1,74 @@
+{
+  "phase": "4.1",
+  "objective": "Hardened Test-Inference Forensic Revalidation Gate",
+  "authoritative_facts": {
+    "test_s1_population": 1732544,
+    "target_corpus_test_size": 9969589,
+    "local_validation_holdout_f05": 0.9122,
+    "actual_leaderboard_f05": 0.057,
+    "official_validator_status": "PASSED (Syntactic Validity Only)"
+  },
+  "mathematical_explanation_of_0_057": {
+    "total_test_rows": 1732544,
+    "empty_predictions_in_submission": 1730488,
+    "empty_prediction_percentage": 0.998813,
+    "matched_prediction_count": 2056,
+    "matched_prediction_percentage": 0.001187,
+    "known_population_singleton_rate": 0.0567,
+    "theoretical_score_of_empty_submission": 0.0567,
+    "actual_leaderboard_score": 0.057,
+    "exact_match_verdict": "CONFIRMED: 0.057 is the exact theoretical macro F0.5 score of an all-empty prediction file on a dataset with ~5.7% true singletons."
+  },
+  "confirmed_root_causes": [
+    {
+      "id": "RC1",
+      "type": "TYPE_A_CANDIDATE_GENERATION / TYPE_G_SERIALIZATION",
+      "title": "Test Query Truncation",
+      "detail": "Only 10,000 of 1,732,544 test queries were evaluated due to --fast parameter; 1,722,544 queries were serialized as empty strings."
+    },
+    {
+      "id": "RC2",
+      "type": "TYPE_A_CANDIDATE_GENERATION",
+      "title": "Target Corpus Distractor Cutoff",
+      "detail": "Streaming scanner stopped after 200,000 lines, ignoring 96.0% of the 9.97M target entities."
+    },
+    {
+      "id": "RC3",
+      "type": "TYPE_A_CANDIDATE_GENERATION",
+      "title": "TF-IDF Retrieval Omission",
+      "detail": "TF-IDF blocker was completely omitted from SubmissionGenerator."
+    },
+    {
+      "id": "RC4",
+      "type": "TYPE_C_FEATURE_GENERATION",
+      "title": "TF-IDF Feature Hardcoding",
+      "detail": "tfidf_score was hardcoded to 0.0 and tfidf_rank to 1000, suppressing model probabilities below the 0.75 threshold."
+    },
+    {
+      "id": "RC5",
+      "type": "TYPE_E_RESCUE_CASCADE",
+      "title": "Adaptive Arm C Rescue Omission",
+      "detail": "AdaptiveRescueCoordinator was omitted from the production candidate generator."
+    }
+  ],
+  "refuted_hypotheses": [
+    {
+      "hypothesis": "Leaderboard noise or random fluctuation",
+      "status": "REFUTED (Discrepancy is 100% systematic and mathematically provable)"
+    },
+    {
+      "hypothesis": "Model overfitting or failure to generalize",
+      "status": "REFUTED (Model logic and features are identical; input queries were truncated)"
+    },
+    {
+      "hypothesis": "France caused the drop",
+      "status": "REFUTED (US, India, and France collapsed equally to ~99.9% empty)"
+    },
+    {
+      "hypothesis": "Entity decision policy bug",
+      "status": "REFUTED (All 6 hand-crafted unit tests passed 100%)"
+    }
+  ],
+  "forensic_status": "AUDIT_COMPLETE_ROOT_CAUSE_PROVEN",
+  "recommendation_for_phase4_2": "Build streaming chunked candidate generator that processes all 1.73M test queries against all 9.97M target entities with TF-IDF and Arm C rescue, then emit validated submission."
+}

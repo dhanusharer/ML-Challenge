@@ -1,0 +1,7 @@
+case_id,description,expected,actual,status
+CASE_1_BELOW_FLOOR,Top score below floor (0.74 < 0.75),,,PASSED
+CASE_2_EXACT_FLOOR,Top score exactly at floor (0.75 >= 0.75),S2-102,S2-102,PASSED
+CASE_3_MARGIN_LOGIC,"Multi-match within margin ([0.90, 0.84, 0.83] -> 0.90-0.84=0.06<=0.08, 0.90-0.83=0.07<=0.08)","S2-103A,S3-103B,S2-103C","S2-103A,S3-103B,S2-103C",PASSED
+CASE_4_MAX_K_CAP,"Four candidates within margin ([0.90, 0.88, 0.85, 0.84]) -> top 3 accepted, 4th capped by max_k=3","S2-104A,S3-104B,S2-104C","S2-104A,S3-104B,S2-104C",PASSED
+CASE_5_TIED_SCORES,Tied scores with deterministic tie-breaking by ID,"S2-A,S3-B","S2-A,S3-B",PASSED
+CASE_6_EMPTY_CANDIDATE_SET,Empty candidate set returns empty prediction,,,PASSED
