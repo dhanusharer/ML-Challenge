@@ -726,11 +726,35 @@ if __name__ == "__main__":
     parser.add_argument("--full-test", action="store_true", help="Run complete test inference and verification")
     parser.add_argument("--chunk-size", type=int, default=100000, help="S1 chunk size for test inference")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser.add_argument("--verify-only", type=str, default="", help="Verify an existing submission TSV and finalize deliverables")
+    parser.add_argument("--merge-and-verify", action="store_true", help="Merge existing chunk files and verify/finalize")
     args = parser.parse_args()
 
     orch = Phase42Orchestrator(seed=args.seed)
 
-    if args.validate_only:
+    if args.verify_only:
+        tsv_path = Path(args.verify_only)
+        orch.verify_and_finalize_submission(tsv_path)
+    elif args.merge_and_verify:
+        chunks_dir = orch.output_dir / "chunks"
+        chunk_files = sorted(chunks_dir.glob("chunk_*.tsv"))
+        if not chunk_files:
+            print(f"No chunk files found in {chunks_dir}")
+            sys.exit(1)
+        merged_tsv = orch.output_dir / "test_predictions_v42.tsv"
+        print(f"Merging {len(chunk_files)} chunk files into {merged_tsv}...")
+        total_rows = 0
+        with open(merged_tsv, "w", newline="", encoding="utf-8") as out_f:
+            out_f.write("source1_entity_id\tmatched_entity_ids\n")
+            for cf in chunk_files:
+                with open(cf, "r", encoding="utf-8") as in_f:
+                    next(in_f)
+                    for line in in_f:
+                        out_f.write(line)
+                        total_rows += 1
+        print(f"Merged {total_rows:,} rows into {merged_tsv.name}.")
+        orch.verify_and_finalize_submission(merged_tsv)
+    elif args.validate_only:
         orch.run_remediation_audit()
         orch.run_parity_gates()
         orch.run_chunk_invariance_test()
