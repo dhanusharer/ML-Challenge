@@ -1,0 +1,47 @@
+{
+  "phase": "4.0",
+  "objective": "Leaderboard Optimization & Controlled Submission Lab",
+  "total_runtime_seconds": 360.54648423194885,
+  "test_s1_population": 1732544,
+  "evaluated_test_queries": 10000,
+  "official_matching_results_sha256": "bc776b4f265f117f61616e2e1ae2de72a908fbe5115e70432c8e3f3ca311edea",
+  "official_validator_passed": true,
+  "daily_submission_slots": [
+    {
+      "slot": 1,
+      "submission_id": "submission_v00_baseline.tsv",
+      "role": "Frozen Baseline Anchor",
+      "sha256": "bc776b4f265f117f61616e2e1ae2de72a908fbe5115e70432c8e3f3ca311edea"
+    },
+    {
+      "slot": 2,
+      "submission_id": "submission_v01_conservative.tsv",
+      "role": "Conservative Precision-Safe Variant",
+      "sha256": "4627658692d4cb18cf7970b9edff56089f95bb31d9d24519725eb3bd2fb96053"
+    },
+    {
+      "slot": 3,
+      "submission_id": "submission_v02_recall.tsv",
+      "role": "Recall-Oriented Variant",
+      "sha256": "6a1b757bdec9df4ce7e905f4c31bca99ad437ff311565037bd72227933e89680"
+    },
+    {
+      "slot": 4,
+      "submission_id": "submission_v03_rescue_sensitive.tsv",
+      "role": "Structural / Rescue Variant",
+      "sha256": "d9fd3be9d54ccdbca5f78ba6528e7e13581606adaae634612a88027895a5bc24"
+    },
+    {
+      "slot": 5,
+      "submission_id": "submission_v04_balanced_opt.tsv",
+      "role": "Best Evidence-Supported Balanced Candidate",
+      "sha256": "bc776b4f265f117f61616e2e1ae2de72a908fbe5115e70432c8e3f3ca311edea"
+    }
+  ],
+  "primary_recommendation": {
+    "selected_submission": "submission_v00_baseline.tsv",
+    "decision_policy": "RelativeMargin(floor=0.75, multi=0.80, margin=0.08, max_k=3)",
+    "expected_macro_f05": 0.9122,
+    "decision_verdict": "KEEP"
+  }
+}

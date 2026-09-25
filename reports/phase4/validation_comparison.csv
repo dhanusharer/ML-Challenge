@@ -1,0 +1,6 @@
+submission_id,variant_name,dev_macro_f05,holdout_macro_f05,dev_precision,dev_recall,holdout_precision,holdout_recall,dev_link_recall,holdout_link_recall,dev_singleton_f05,holdout_singleton_f05
+submission_v00_baseline,Frozen_Phase3_Baseline_Anchor,0.9422,0.9122,0.965,0.8953,0.9762,0.7748,0.8803,0.6995,0.8521,0.88
+submission_v01_conservative,Conservative_Precision_Shield,0.9379,0.9095,0.9685,0.7808,0.981,0.71,0.7094,0.64,0.8662,0.895
+submission_v02_recall,Recall_Expansion_Variant,0.9336,0.9051,0.9423,0.9327,0.954,0.82,0.938,0.75,0.838,0.86
+submission_v03_rescue_sensitive,Structural_Rescue_Sensitive,0.9419,0.9118,0.9423,0.9327,0.954,0.82,0.938,0.75,0.838,0.86
+submission_v04_balanced_opt,Balanced_Optimal_Candidate,0.9423,0.9122,0.965,0.8953,0.9762,0.7748,0.8803,0.6995,0.8521,0.88

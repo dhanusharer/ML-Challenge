@@ -1,0 +1,15 @@
+{
+  "submission_id": "submission_v01_conservative",
+  "hypothesis_id": "H1_CONSERVATIVE_PRECISION_SAFE",
+  "variant_name": "Conservative_Precision_Shield",
+  "threshold_floor": 0.8,
+  "multi_threshold": 0.82,
+  "margin": 0.06,
+  "max_k": 2,
+  "rescue_trigger": "top_candidate_score < 0.75 or margin < 0.06",
+  "local_dev_f05": 0.9379,
+  "local_holdout_f05": 0.9095,
+  "file_sha256": "4627658692d4cb18cf7970b9edff56089f95bb31d9d24519725eb3bd2fb96053",
+  "validator_status": "PASSED",
+  "generated_timestamp": "2026-09-25 15:32:48 UTC"
+}

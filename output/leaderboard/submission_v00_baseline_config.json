@@ -1,0 +1,15 @@
+{
+  "submission_id": "submission_v00_baseline",
+  "hypothesis_id": "H0_FROZEN_BASELINE_ANCHOR",
+  "variant_name": "Frozen_Phase3_Baseline_Anchor",
+  "threshold_floor": 0.75,
+  "multi_threshold": 0.8,
+  "margin": 0.08,
+  "max_k": 3,
+  "rescue_trigger": "top_candidate_score < 0.75 or margin < 0.06",
+  "local_dev_f05": 0.9422,
+  "local_holdout_f05": 0.9122,
+  "file_sha256": "bc776b4f265f117f61616e2e1ae2de72a908fbe5115e70432c8e3f3ca311edea",
+  "validator_status": "PASSED",
+  "generated_timestamp": "2026-09-25 15:32:40 UTC"
+}
