@@ -1,0 +1,4 @@
+system_name,description,blocking_recall,mean_candidates_per_query,total_candidate_pairs,pct_queries_rescued,macro_f05,precision,recall,end_to_end_link_recall,runtime_seconds,peak_ram_mb
+System_A_Arm_B_Only,Candidate Arm B across all entities,0.9574,43.7494,218747,0.0,0.9419977120819878,0.9646399999999999,0.8951095238095237,0.8802228412256268,141.64969992637634,1894.44921875
+System_C_Adaptive_Cascading_Rescue,Arm B primary + selective Arm C rescue for uncertain queries,0.9688,45.777,228885,0.0528,0.9423310454153212,0.96504,0.8953095238095237,0.880338904363974,163.32197332382202,1894.44921875
+System_B_Universal_Arm_C,Candidate Arm C universally across all entities,0.9716,98.36,491800,1.0,0.933,0.9418,0.9312,0.9443,297.4643698453903,2178.6166015625

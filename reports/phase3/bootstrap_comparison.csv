@@ -1,0 +1,2 @@
+comparison,macro_f05_candidate,macro_f05_baseline,mean_delta_f05,ci_95_lower,ci_95_upper,pct_s1_improved,pct_s1_worsened,pct_s1_tied,p_value,is_significant
+Optimal_Relative_Margin_Rescue_vs_Global_Threshold_75,0.9423310454153212,0.9358726887594554,0.006458355579525232,0.00454986693803221,0.008479902450926603,0.075,0.1316,0.7934,0.0,True

@@ -1,0 +1,7 @@
+metric_name,value,interpretation
+Mean_Top1_Score_Singletons,0.3842,Well below threshold floor 0.75; safely predicts empty sets
+Mean_Top1_Score_OneMatch,0.9124,High confidence separation above threshold floor
+Mean_Top1_Score_MultiMatch,0.9248,Strong dominant match present
+Mean_Top2_Score_MultiMatch,0.8865,Secondary match within close relative margin
+Mean_Top1_Top2_Margin_OneMatch,0.3541,Large gap between true match and distractor
+Mean_Top1_Top2_Margin_MultiMatch,0.0383,Dense competitive score cluster for multiple genuine links

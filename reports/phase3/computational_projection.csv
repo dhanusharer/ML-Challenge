@@ -1,0 +1,9 @@
+parameter,value,basis
+Target_Population,"1,730,000 Source-1 Test Entities",Official challenge specification
+Expected_Candidate_Pairs,"75,686,462 pairs",Measured 43.7 candidates/S1
+Candidate_Generation_Time,2.39 hours,Streaming inverted index lookup
+Feature_Extraction_and_Scoring_Time,9.56 hours,"Measured 2,200 pairs/sec throughput"
+Total_Expected_End_to_End_Runtime,11.94 hours,Single-node 8-core CPU inference
+Peak_RAM_Requirement,2.2 GB,"Chunked streaming (batch size 5,000 S1 queries)"
+Disk_Requirement,450 MB (final TSV),TSV output formatting
+Production_Feasibility_Verdict,HIGHLY FEASIBLE (Completed overnight or in parallel batches),Fully linear O(N) scaling

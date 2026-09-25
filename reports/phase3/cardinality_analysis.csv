@@ -1,0 +1,4 @@
+cardinality_stratum,query_count,macro_f05,precision,recall,correct_empty_rate
+Zero_Match_Singletons,1419,0.8485915492957746,1.0,1.0,0.8485915492957746
+One_Match_Entities,1376,0.8801433948492772,0.9412,0.9355,0.0
+Multi_Match_Entities,22205,0.9525187290048007,0.9485,0.932,0.0
