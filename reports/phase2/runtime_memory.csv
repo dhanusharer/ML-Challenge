@@ -1,0 +1,7 @@
+operation,cohort_size,runtime_seconds,peak_ram_mb
+Eval_Deterministic_Baseline,75,14.21,1501.3
+Eval_Logistic_Regression,75,14.17,1501.4
+Eval_LightGBM_Classifier,75,15.72,1502.4
+Eval_LightGBM_LambdaMART_Ranker,75,34.60,1506.5
+ArmEval_ARM_B,75,13.87,1506.5
+ArmEval_ARM_C,75,15.28,1506.5

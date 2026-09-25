@@ -1,0 +1,75 @@
+{
+  "feature_version": "v1.0",
+  "groups": {
+    "G1_name": [
+      "name_exact_clean",
+      "name_compact_exact",
+      "name_token_jaccard",
+      "name_token_overlap_coeff",
+      "name_char_ngram_cosine",
+      "name_edit_similarity",
+      "name_prefix_match_len",
+      "name_length_ratio",
+      "name_first_token_match",
+      "name_sorted_token_jaccard"
+    ],
+    "G2_address": [
+      "addr_exact_clean",
+      "addr_token_jaccard",
+      "addr_token_overlap_coeff",
+      "addr_char_ngram_cosine",
+      "addr_numeric_exact_match",
+      "addr_numeric_jaccard",
+      "addr_postal_match",
+      "addr_is_missing_either"
+    ],
+    "G3_country_source": [
+      "country_exact_match",
+      "source_is_s2",
+      "source_is_s3"
+    ],
+    "G4_rarity": [
+      "shared_rare_token_count",
+      "min_shared_token_idf"
+    ],
+    "G5_provenance": [
+      "retrieval_support_count",
+      "retrieved_by_exact_name",
+      "retrieved_by_sorted_name",
+      "retrieved_by_name_numeric",
+      "retrieved_by_char_ngram",
+      "retrieved_by_domain",
+      "retrieved_by_tfidf",
+      "tfidf_similarity_score",
+      "tfidf_rank"
+    ],
+    "G6_cross_script": [
+      "is_cross_script_pair",
+      "translit_name_token_jaccard",
+      "translit_name_char_ngram_cosine"
+    ],
+    "G7_domain": [
+      "is_domain_name_pair",
+      "domain_compact_match"
+    ],
+    "G8_leetspeak": [
+      "leetspeak_exact_match",
+      "accent_stripped_match"
+    ],
+    "G9_interactions": [
+      "inter_name_x_addr_jaccard",
+      "inter_name_exact_x_addr_jaccard",
+      "inter_name_jaccard_x_country",
+      "inter_support_x_name_jaccard"
+    ]
+  },
+  "ablation_experiments": [
+    {"name": "ABL-01_Name_Only", "active_groups": ["G1_name"]},
+    {"name": "ABL-02_Name_Address", "active_groups": ["G1_name", "G2_address"]},
+    {"name": "ABL-03_Core_Plus_CountrySource", "active_groups": ["G1_name", "G2_address", "G3_country_source"]},
+    {"name": "ABL-04_Core_Plus_Provenance", "active_groups": ["G1_name", "G2_address", "G3_country_source", "G5_provenance"]},
+    {"name": "ABL-05_Core_Plus_Domain_Leet", "active_groups": ["G1_name", "G2_address", "G3_country_source", "G5_provenance", "G7_domain", "G8_leetspeak"]},
+    {"name": "ABL-06_Core_Plus_CrossScript", "active_groups": ["G1_name", "G2_address", "G3_country_source", "G5_provenance", "G6_cross_script", "G7_domain", "G8_leetspeak"]},
+    {"name": "ABL-07_Full_Feature_Set", "active_groups": ["G1_name", "G2_address", "G3_country_source", "G4_rarity", "G5_provenance", "G6_cross_script", "G7_domain", "G8_leetspeak", "G9_interactions"]}
+  ]
+}

@@ -1,0 +1,44 @@
+feature_name,group,description,data_source,raw_or_derived,missing_behavior,allowed_range,leakage_risk,computation_cost,enabled
+name_exact_clean,G1_name,Exact equality of normalized legal-suffix-stripped business names,business_name,derived,0.0 if either name missing,"[0.0, 1.0]",Zero leakage; computed purely from query and target strings,O(1),True
+name_compact_exact,G1_name,Exact equality of compact alphanumeric names (no whitespace/punctuation),business_name,derived,0.0 if either name missing,"[0.0, 1.0]",Zero leakage,O(1),True
+name_token_jaccard,G1_name,Jaccard similarity over word tokens of stripped business names,business_name,derived,0.0 if empty token sets,"[0.0, 1.0]",Zero leakage,O(N + M),True
+name_token_overlap_coeff,G1_name,"Overlap coefficient: intersection / min(|tokens_q|, |tokens_t|)",business_name,derived,0.0 if empty token sets,"[0.0, 1.0]",Zero leakage,O(N + M),True
+name_char_ngram_cosine,G1_name,Cosine similarity over character 3-gram multiset vectors,business_name,derived,0.0 if empty string,"[0.0, 1.0]",Zero leakage,O(L1 + L2),True
+name_edit_similarity,G1_name,"Normalized Levenshtein ratio: 1 - distance / max(len1, len2)",business_name,derived,0.0 if empty string,"[0.0, 1.0]",Zero leakage,O(L1 * L2) - bounded by max len 60,True
+name_prefix_match_len,G1_name,Length of longest common prefix between normalized names normalized by min len,business_name,derived,0.0 if empty string,"[0.0, 1.0]",Zero leakage,"O(min(L1, L2))",True
+name_length_ratio,G1_name,"Ratio of min(len1, len2) / max(len1, len2)",business_name,derived,0.0 if max len 0,"[0.0, 1.0]",Zero leakage,O(1),True
+name_first_token_match,G1_name,Binary indicator if the first informative name token matches exactly,business_name,derived,0.0 if tokens missing,"[0.0, 1.0]",Zero leakage,O(1),True
+name_sorted_token_jaccard,G1_name,Jaccard similarity on word order-invariant sorted tokens,business_name,derived,0.0 if tokens missing,"[0.0, 1.0]",Zero leakage,O(N log N),True
+addr_exact_clean,G2_address,Exact equality of standard cleaned address strings,business_address,derived,0.0 if either address missing,"[0.0, 1.0]",Zero leakage,O(1),True
+addr_token_jaccard,G2_address,Jaccard similarity over word tokens of cleaned addresses,business_address,derived,0.0 if empty address tokens,"[0.0, 1.0]",Zero leakage,O(N + M),True
+addr_token_overlap_coeff,G2_address,"Overlap coefficient: intersection / min(|addr_q|, |addr_t|)",business_address,derived,0.0 if empty address tokens,"[0.0, 1.0]",Zero leakage,O(N + M),True
+addr_char_ngram_cosine,G2_address,Cosine similarity over character 3-grams of address strings,business_address,derived,0.0 if empty string,"[0.0, 1.0]",Zero leakage,O(L1 + L2),True
+addr_numeric_exact_match,G2_address,Binary indicator if all numeric plot/street numbers match exactly,business_address,derived,0.0 if numeric tokens missing,"[0.0, 1.0]",Zero leakage,O(K1 + K2),True
+addr_numeric_jaccard,G2_address,Jaccard similarity over numeric street and house numbers,business_address,derived,0.0 if numeric tokens missing,"[0.0, 1.0]",Zero leakage,O(K1 + K2),True
+addr_postal_match,G2_address,Exact match of 5 or 6 digit postal/PIN codes extracted from address,business_address,derived,-1.0 (imputed as missing flag) or 0.0,"[-1.0, 1.0]",Zero leakage,O(1),True
+addr_is_missing_either,G2_address,Binary flag if either query or target address is empty/missing,business_address,derived,"1.0 if missing, 0.0 otherwise","[0.0, 1.0]",Zero leakage,O(1),True
+country_exact_match,G3_country_source,Open-set exact match indicator between query and candidate country strings,country,derived,0.0 if missing,"[0.0, 1.0]","Zero leakage; completely open-set (US, India, France handled generically)",O(1),True
+source_is_s2,G3_country_source,Binary indicator if candidate originates from Source 2,candidate_source,derived,0.0,"[0.0, 1.0]",Zero leakage; describes data origin only,O(1),True
+source_is_s3,G3_country_source,Binary indicator if candidate originates from Source 3,candidate_source,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+is_cross_script_pair,G6_cross_script,Binary indicator if pair contains one Latin name and one Indic script name,business_name,derived,0.0,"[0.0, 1.0]",Zero leakage; rule-based Unicode character detection,O(L),True
+translit_name_token_jaccard,G6_cross_script,Token Jaccard similarity after offline Brahmic transliteration to Latin,business_name,derived,0.0 if not cross-script or empty,"[0.0, 1.0]",Zero leakage; strictly offline zero-dependency romanizer,O(L),True
+translit_name_char_ngram_cosine,G6_cross_script,Character 3-gram cosine after offline Brahmic transliteration to Latin,business_name,derived,0.0 if not cross-script or empty,"[0.0, 1.0]",Zero leakage,O(L),True
+is_domain_name_pair,G7_domain,"Binary indicator if either name resembles a web domain (.com, .org, .net, etc.)",business_name,derived,0.0,"[0.0, 1.0]",Zero leakage; regex domain pattern matching,O(1),True
+domain_compact_match,G7_domain,Exact match of compact signatures after stripping domain protocols/extensions,business_name,derived,0.0 if no domain or <5 chars,"[0.0, 1.0]",Zero leakage,O(1),True
+leetspeak_exact_match,G8_leetspeak,Exact match of names after controlled internal digit-to-letter normalization,business_name,derived,0.0 if <4 chars,"[0.0, 1.0]",Zero leakage,O(L),True
+accent_stripped_match,G8_leetspeak,Exact match of names after stripping Unicode accents/diacritics (NFKD),business_name,derived,0.0,"[0.0, 1.0]",Zero leakage,O(L),True
+shared_rare_token_count,G4_rarity,Count of shared word tokens that are rare in the unsupervised corpus,unsupervised_corpus,derived,0.0,"[0, inf)","Zero leakage; computed from unsupervised corpus token frequencies, no labels",O(N + M),True
+min_shared_token_idf,G4_rarity,Minimum corpus IDF among shared name tokens (rarity of shared evidence),unsupervised_corpus,derived,0.0 if no shared tokens,"[0.0, 15.0]",Zero leakage; derived from unsupervised corpus vocabulary document counts,O(N + M),True
+retrieval_support_count,G5_provenance,Total number of independent retrieval blocks that surfaced this candidate,retrieval_pipeline,derived,1.0 (at least one block),"[1, 10]",Zero leakage; describes candidate generation mechanism only,O(1),True
+retrieved_by_exact_name,G5_provenance,Binary indicator if candidate was surfaced by Exact Name block,retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+retrieved_by_sorted_name,G5_provenance,Binary indicator if candidate was surfaced by Sorted Tokens block,retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+retrieved_by_name_numeric,G5_provenance,Binary indicator if candidate was surfaced by Name + Numeric block,retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+retrieved_by_char_ngram,G5_provenance,Binary indicator if candidate was surfaced by Boundary Char N-gram block,retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+retrieved_by_domain,G5_provenance,Binary indicator if candidate was surfaced by Domain Normalization block,retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+retrieved_by_tfidf,G5_provenance,Binary indicator if candidate was surfaced by Sparse TF-IDF retrieval,retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+tfidf_similarity_score,G5_provenance,Cosine similarity score from TF-IDF sparse retrieval (0.0 if not retrieved via TF-IDF),retrieval_pipeline,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+tfidf_rank,G5_provenance,Rank position in query's top-k TF-IDF retrieval (1 to k; 1000 if not in top-k),retrieval_pipeline,derived,1000.0,"[1.0, 1000.0]",Zero leakage,O(1),True
+inter_name_x_addr_jaccard,G9_interactions,Interaction product: name_token_jaccard * addr_token_jaccard,derived_interaction,derived,0.0,"[0.0, 1.0]",Zero leakage; joint similarity evidence,O(1),True
+inter_name_exact_x_addr_jaccard,G9_interactions,Interaction product: name_exact_clean * addr_token_jaccard,derived_interaction,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+inter_name_jaccard_x_country,G9_interactions,Interaction product: name_token_jaccard * country_exact_match,derived_interaction,derived,0.0,"[0.0, 1.0]",Zero leakage,O(1),True
+inter_support_x_name_jaccard,G9_interactions,Interaction: log(1 + retrieval_support_count) * name_token_jaccard,derived_interaction,derived,0.0,"[0.0, 5.0]",Zero leakage,O(1),True

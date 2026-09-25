@@ -1,0 +1,37 @@
+{
+  "models": {
+    "deterministic": {
+      "name_weight": 0.50,
+      "addr_weight": 0.30,
+      "exact_bonus": 0.15,
+      "support_bonus": 0.05
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "solver": "lbfgs",
+      "random_state": 42
+    },
+    "lightgbm_classifier": {
+      "n_estimators": 150,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": 6,
+      "scale_pos_weight": 3.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": 42
+    },
+    "lightgbm_ranker": {
+      "objective": "lambdarank",
+      "n_estimators": 150,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": 6,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": 42
+    }
+  }
+}

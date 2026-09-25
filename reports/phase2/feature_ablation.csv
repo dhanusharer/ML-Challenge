@@ -1,0 +1,8 @@
+experiment_name,num_features,active_groups,pair_precision,pair_recall,pr_auc,roc_auc,best_macro_f05,best_threshold
+ABL-01_Name_Only,10,G1_name,0.37171,0.85283,0.42051,0.92069,0.61071,0.60
+ABL-02_Name_Address,18,"G1_name, G2_address",0.89753,0.95849,0.96481,0.99358,0.91073,0.40
+ABL-03_Core_Plus_CountrySource,21,"G1_name, G2_address, G3_country_source",0.90391,0.95849,0.97095,0.99383,0.91689,0.50
+ABL-04_Core_Plus_Provenance,30,"G1_name, G2_address, G3_country_source, G5_provenance",0.90459,0.96604,0.98134,0.99429,0.91977,0.50
+ABL-05_Core_Plus_Domain_Leet,34,"G1_name, G2_address, G3_country_source, G5_provenance, G7_domain, G8_leetspeak",0.90106,0.96226,0.96620,0.99407,0.92091,0.60
+ABL-06_Core_Plus_CrossScript,37,"G1_name, G2_address, G3_country_source, G5_provenance, G6_cross_script, G7_domain, G8_leetspeak",0.90071,0.95849,0.97864,0.99640,0.91182,0.50
+ABL-07_Full_Feature_Set,43,"G1_name, G2_address, G3_country_source, G4_rarity, G5_provenance, G6_cross_script, G7_domain, G8_leetspeak, G9_interactions",0.90141,0.96604,0.97980,0.99438,0.92071,0.60

@@ -1,0 +1,15 @@
+model_name,candidate_arm,threshold,macro_f05,mean_precision,mean_recall,end_to_end_link_recall,total_predicted_links,num_correct_singletons,num_false_singleton_merges
+LightGBM_Classifier,ARM_B,0.20,0.89122,0.89720,0.91595,0.91815,307,2,0
+LightGBM_Classifier,ARM_B,0.30,0.90256,0.91358,0.91150,0.91459,296,2,0
+LightGBM_Classifier,ARM_B,0.40,0.91379,0.92629,0.91150,0.91459,291,2,0
+LightGBM_Classifier,ARM_B,0.50,0.92219,0.93563,0.91150,0.91459,284,2,0
+LightGBM_Classifier,ARM_B,0.60,0.91762,0.93674,0.90172,0.90391,280,2,0
+LightGBM_Classifier,ARM_B,0.70,0.92281,0.94282,0.90172,0.90391,277,2,0
+LightGBM_Classifier,ARM_B,0.80,0.92170,0.94330,0.89506,0.90036,273,2,0
+LightGBM_Classifier,ARM_C,0.20,0.89474,0.89867,0.93039,0.92883,316,2,0
+LightGBM_Classifier,ARM_C,0.30,0.90346,0.91150,0.92595,0.92527,306,2,0
+LightGBM_Classifier,ARM_C,0.40,0.91741,0.92775,0.92595,0.92527,299,2,0
+LightGBM_Classifier,ARM_C,0.50,0.92600,0.93725,0.92595,0.92527,291,2,0
+LightGBM_Classifier,ARM_C,0.60,0.92157,0.93844,0.91617,0.91459,286,2,0
+LightGBM_Classifier,ARM_C,0.70,0.92598,0.94344,0.91617,0.91459,283,2,0
+LightGBM_Classifier,ARM_C,0.80,0.92546,0.94393,0.90950,0.91103,278,2,0

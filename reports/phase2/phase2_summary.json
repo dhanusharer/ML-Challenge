@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "dev_cohort_size": 150,
+    "val_cohort_size": 75,
+    "total_pipeline_time_seconds": 286.75472807884216,
+    "features_engineered": 43
+  },
+  "model_comparison": [
+    {
+      "model_name": "Deterministic_Baseline",
+      "candidate_arm": "ARM_B",
+      "pr_auc": 0.7209990486347893,
+      "roc_auc": 0.9434710249266041,
+      "best_diagnostic_macro_f05": 0.68776554457755,
+      "best_threshold": 0.4,
+      "end_to_end_link_recall": 0.708185053380783
+    },
+    {
+      "model_name": "Logistic_Regression",
+      "candidate_arm": "ARM_B",
+      "pr_auc": 0.9841774479194564,
+      "roc_auc": 0.9968921218467752,
+      "best_diagnostic_macro_f05": 0.9000900641010761,
+      "best_threshold": 0.7,
+      "end_to_end_link_recall": 0.896797153024911
+    },
+    {
+      "model_name": "LightGBM_Classifier",
+      "candidate_arm": "ARM_B",
+      "pr_auc": 0.9798792909345042,
+      "roc_auc": 0.9954578603885783,
+      "best_diagnostic_macro_f05": 0.9228093849992896,
+      "best_threshold": 0.7,
+      "end_to_end_link_recall": 0.9039145907473309
+    },
+    {
+      "model_name": "LightGBM_LambdaMART_Ranker",
+      "candidate_arm": "ARM_B",
+      "pr_auc": 0.9801157896926996,
+      "roc_auc": 0.9941694560278251,
+      "best_diagnostic_macro_f05": 0.9295766589586816,
+      "best_threshold": 0.7,
+      "end_to_end_link_recall": 0.9074733096085409
+    }
+  ],
+  "arm_comparison": [
+    {
+      "candidate_arm": "ARM_B",
+      "blocking_recall": 0.9430604982206405,
+      "mean_candidates": 43.89333333333333,
+      "pr_auc": 0.9798792909345042,
+      "best_diagnostic_macro_f05": 0.9228093849992896,
+      "best_threshold": 0.7,
+      "end_to_end_link_recall": 0.9039145907473309
+    },
+    {
+      "candidate_arm": "ARM_C",
+      "blocking_recall": 0.9679715302491103,
+      "mean_candidates": 81.30666666666667,
+      "pr_auc": 0.967257252543098,
+      "best_diagnostic_macro_f05": 0.9260044804046932,
+      "best_threshold": 0.5,
+      "end_to_end_link_recall": 0.9252669039145908
+    }
+  ]
+}

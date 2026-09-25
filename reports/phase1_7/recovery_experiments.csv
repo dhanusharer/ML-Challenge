@@ -1,0 +1,7 @@
+experiment,blocking_recall,s2_recall,s3_recall,captured_true_links,total_true_links,mean_candidates,p95_candidates,max_candidates,reduction_ratio
+"Config A (Phase 1.6 Baseline U6, k=25)",0.88194,0.89538,0.86966,3003,3405,137.26,524.0,525,0.9999867
+Exp B: Frequency-Aware Retrieval,0.89662,0.90462,0.88933,3053,3405,157.61,545.0,822,0.9999847
+Exp C: Cross-Script Recovery,0.89280,0.91262,0.87472,3040,3405,583.20,1898.4,16312,0.9999435
+Exp D: Domain Normalization,0.90543,0.91015,0.90112,3083,3405,161.25,569.1,1862,0.9999844
+Exp E: Leetspeak / Accent,0.88693,0.89969,0.87528,3020,3405,139.14,526.0,794,0.9999865
+Exp F: Complete Alias Recovery,0.89956,0.92615,0.87528,3063,3405,415.96,1597.0,10183,0.9999597

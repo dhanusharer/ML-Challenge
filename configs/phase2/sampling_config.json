@@ -1,0 +1,12 @@
+{
+  "sampling_strategy": "stratified_hard_negative",
+  "negatives_per_positive": 6,
+  "seed": 42,
+  "strata_proportions": {
+    "top_tfidf": 0.30,
+    "multi_block_collision": 0.30,
+    "name_distractors": 0.20,
+    "address_distractors": 0.10,
+    "general_candidates": 0.10
+  }
+}

@@ -1,0 +1,7 @@
+union_name,total_s1_evaluated,total_true_links,captured_true_links,blocking_recall,s2_recall,s3_recall,total_candidates,mean_candidates_per_s1,median_candidates_per_s1,p90_candidates_per_s1,p95_candidates_per_s1,p99_candidates_per_s1,max_candidates_per_s1,reduction_ratio,incremental_recall,incremental_candidates
+U1_ExactName,5000,17232,7520,0.436397,0.447824,0.425735,10609,2.12,2.0,4.0,6.0,13.010000000000218,27,0.9999819,0.436397,10609
+U2_Exact+Sorted,5000,17232,7901,0.458507,0.470786,0.44705,11075,2.21,2.0,4.0,6.0,13.010000000000218,27,0.99998111,0.02211,466
+U3_Exact+Sorted+PostalHybrid,5000,17232,8169,0.47406,0.487377,0.461633,11343,2.27,2.0,4.0,6.0,13.010000000000218,27,0.99998065,0.015553,268
+U4_Exact+Sorted+PostalHybrid+NumericHybrid,5000,17232,11449,0.664403,0.673479,0.655934,15362,3.07,3.0,6.0,7.0,14.0,29,0.99997379,0.190343,4019
+U5_Exact+Sorted+PostalHybrid+NumericHybrid+CharBoundary,5000,17232,12040,0.6987,0.708223,0.689814,21904,4.38,3.0,8.0,13.0,31.0,82,0.99996263,0.034297,6542
+U6_FullMultiBlocker+TFIDF,5000,17232,16635,0.965355,0.974393,0.956922,133907,26.78,25.0,30.0,34.0,48.02000000000044,102,0.99977155,0.266655,112003

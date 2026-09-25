@@ -12,6 +12,10 @@ student_resource/
 *.feather
 *.h5
 
+# Allow tracking reports CSVs
+!reports/**/*.csv
+!reports/*.csv
+
 # --- Python Virtual Environments ---
 .venv/
 venv/

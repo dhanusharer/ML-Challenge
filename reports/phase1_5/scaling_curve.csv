@@ -1,0 +1,4 @@
+query_scale,total_true_links,captured_true_links,blocking_recall,s2_recall,s3_recall,total_candidates,mean_candidates,median_candidates,p90_candidates,p95_candidates,p99_candidates,max_candidates,reduction_ratio,runtime_seconds,throughput_qps,peak_ram_mb
+5000,17232,16188,0.939415,0.953715,0.926071,179765,35.95,26.0,59.0,84.0,148.0,363,0.99992757,9.62,520.0,2056.1
+25000,86550,81250,0.938764,0.952053,0.926341,892647,35.71,26.0,59.0,82.0,145.0,365,0.99992807,51.49,485.6,2057.9
+100000,346390,325073,0.93846,0.951035,0.926684,3551003,35.51,26.0,59.0,82.0,145.0,412,0.99992846,205.0,487.8,2059.9

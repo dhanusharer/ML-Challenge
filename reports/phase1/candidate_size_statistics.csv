@@ -1,0 +1,17 @@
+strategy_name,strategy_type,mean_candidates_per_s1,median_candidates_per_s1,p90_candidates_per_s1,p95_candidates_per_s1,p99_candidates_per_s1,max_candidates_per_s1,total_candidates,reduction_ratio
+BLOCK-NAME-EXACT-RAW,individual_blocker,0.8606,1.0,2.0,3.0,4.0,14,4303,0.9999926590009554
+BLOCK-NAME-EXACT-CLEAN,individual_blocker,2.1218,2.0,4.0,6.0,13.010000000000218,27,10609,0.9999819008461853
+BLOCK-NAME-SORTED-TOKENS,individual_blocker,2.215,2.0,4.0,6.0,13.010000000000218,27,11075,0.9999811058414085
+BLOCK-NAME-RARE-TOKEN,individual_blocker,30.2468,9.0,77.0,98.0,161.0,176,151234,0.9997419919475911
+BLOCK-CHAR-BOUNDARY-4GRAM,individual_blocker,3.6342,2.0,6.0,12.0,30.01000000000022,79,18171,0.9999689999317593
+BLOCK-ADDR-EXACT,individual_blocker,0.2902,0.0,1.0,2.0,3.0,5,1451,0.9999975245666712
+BLOCK-ADDR-POSTAL,individual_blocker,0.1882,0.0,0.0,1.0,5.0,10,941,0.9999983946362768
+BLOCK-HYBRID-NAME-POSTAL,individual_blocker,0.1276,0.0,0.0,1.0,4.0,7,638,0.9999989115599837
+BLOCK-HYBRID-NAME-NUMERIC,individual_blocker,1.905,2.0,4.0,5.0,6.0,12,9525,0.9999837501706019
+BLOCK-TFIDF-WORD-TOP25,individual_blocker,25.0,25.0,25.0,25.0,25.0,25,125000,0.999786747645694
+U1_ExactName,progressive_union,2.12,2.0,4.0,6.0,13.010000000000218,27,10609,0.9999819
+U2_Exact+Sorted,progressive_union,2.21,2.0,4.0,6.0,13.010000000000218,27,11075,0.99998111
+U3_Exact+Sorted+PostalHybrid,progressive_union,2.27,2.0,4.0,6.0,13.010000000000218,27,11343,0.99998065
+U4_Exact+Sorted+PostalHybrid+NumericHybrid,progressive_union,3.07,3.0,6.0,7.0,14.0,29,15362,0.99997379
+U5_Exact+Sorted+PostalHybrid+NumericHybrid+CharBoundary,progressive_union,4.38,3.0,8.0,13.0,31.0,82,21904,0.99996263
+U6_FullMultiBlocker+TFIDF,progressive_union,26.78,25.0,30.0,34.0,48.02000000000044,102,133907,0.99977155

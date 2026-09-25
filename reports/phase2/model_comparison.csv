@@ -1,0 +1,5 @@
+model_name,candidate_arm,query_count,total_candidate_pairs,pair_precision,pair_recall,pr_auc,roc_auc,recall_at_1,recall_at_3,recall_at_5,best_diagnostic_threshold,diagnostic_macro_f05,diagnostic_precision,diagnostic_recall,end_to_end_link_recall,fit_seconds,eval_seconds,peak_ram_mb
+Deterministic_Baseline,ARM_B,75,3292,0.48105,0.62264,0.72100,0.94347,0.28681,0.66957,0.78680,0.40,0.68777,0.72193,0.70224,0.70819,0.00,14.21,1501.3
+Logistic_Regression,ARM_B,75,3292,0.85284,0.96226,0.98418,0.99689,0.31078,0.76341,0.90666,0.70,0.90009,0.91252,0.89572,0.89680,0.06,14.17,1501.4
+LightGBM_Classifier,ARM_B,75,3292,0.90493,0.96981,0.97988,0.99546,0.30394,0.77094,0.90826,0.70,0.92281,0.94282,0.90172,0.90391,0.17,15.72,1502.4
+LightGBM_LambdaMART_Ranker,ARM_B,75,3292,0.89199,0.96604,0.98012,0.99417,0.30394,0.77368,0.90552,0.70,0.92958,0.94997,0.90617,0.90747,0.14,34.60,1506.5

@@ -1,0 +1,6 @@
+configuration,blocking_recall,s2_recall,s3_recall,captured_true_links,total_true_links,mean_candidates,p90_candidates,p95_candidates,p99_candidates,max_candidates,reduction_ratio
+"Config A (Phase 1.6 Baseline U6, k=25)",0.88194,0.89538,0.86966,3003,3405,137.26,515.1,524.0,525.0,525,0.9999867
+Config B (Fast Recovery: Domain + FreqAware + k=40),0.92511,0.92985,0.92079,3150,3405,196.06,552.2,666.0,1144.1,1996,0.9999810
+Config C (Balanced Full Recovery: All Enhancements + k=50),0.93833,0.94831,0.92921,3195,3405,650.17,1029.4,1958.0,8963.1,16371,0.9999370
+Config D (Deep Recovery: All Enhancements + Alias + k=75),0.94537,0.95815,0.93371,3219,3405,905.38,1706.3,4854.3,12994.0,16642,0.9999123
+Config E (Maximum Recall: All Enhancements + Alias + k=100),0.94919,0.96123,0.93820,3232,3405,929.38,1731.3,4868.8,13019.0,16667,0.9999099
