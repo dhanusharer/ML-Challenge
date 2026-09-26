@@ -11,6 +11,7 @@ student_resource/
 *.parquet
 *.feather
 *.h5
+output/
 
 # Allow tracking reports CSVs
 !reports/**/*.csv
