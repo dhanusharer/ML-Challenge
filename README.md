@@ -126,5 +126,3 @@ The split summary and cryptographic checksums are written to `reports/phase0/val
 
 ---
 
-### 10. Manual Actions Required
-- **None.** All dependencies, datasets, scripts, and validation checks are verified and passing.
