@@ -154,6 +154,9 @@ def main():
             sys.exit(code)
         print_summary_report()
 
+
+
+    
     if args.report and not (args.benchmark or args.all or args.quick):
         print_summary_report()
 
